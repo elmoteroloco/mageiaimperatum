@@ -29,8 +29,8 @@
             <ul>
                 <br><br>
                 <button><a href="index.html">Inicio</a></button>
-                <button><a href="codexrabidus.html">Codex Rabidus</a></button>
                 <button><a href="codexludis.html">Codex Ludis</a></button>
+                <button><a href="codexrabidus.html">Codex Rabidus</a></button>
                 <button><a href="registro.html">Registro</a></button>
                 <button><a href="ubicacion.html">Ubicación</a></button>
                 <br><br>
@@ -43,52 +43,60 @@
             <span>
                 <form action="https://formspree.io/f/xvgpjnoy" method="POST">
                     <fieldset>
-                        <legend>Datos personales</legend>
+                        <legend><b>Formulario de Registro</b></legend>
+                        <fieldset>
+                            <legend>Datos personales</legend>
+                            <br><br>
+                            <label for="nombredeusuario">Nombre de usuario: </label>
+                            <input size="30" type="text" name="nombredeusuario" placeholder="Tu nombre de usuario...">
+                            <br><br>
+                            <label for="nombre">Nombre: </label>
+                            <input size="30" type="text" name="nombre" placeholder="Tu nombre...">
+                            <label for="apellido">Apellido:</label>
+                            <input size="30" type="text" name="apellido" placeholder="Tu apellido...">
+                            <br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="Tu email...">
+                            <br><br>
+                            <label for="nacimiento">Fecha de nacimiento: </label>
+                            <input type="date" name="nacimiento">
+                            <p>Facción:
+                                <input type="radio" name="gender" value="Magis" checked>Magis
+                                <input type="radio" name="gender" value="Nobilii">Nobilii
+                                <input type="radio" name="gender" value="Otro"> Otro
+                            </p>
+                        </fieldset>
                         <br><br>
-                        <label for="nombredeusuario">Nombre de usuario: </label>
-                        <input size="30" type="text" name="nombredeusuario" placeholder="Tu nombre de usuario...">
+                        <img src="imgs\manos.gif" alt="Magia" width="30%">
                         <br><br>
-                        <label for="nombre">Nombre: </label>
-                        <input size="30" type="text" name="nombre" placeholder="Tu nombre...">
-                        <label for="apellido">Apellido:</label>
-                        <input size="30" type="text" name="apellido" placeholder="Tu apellido...">
-                        <br><br>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Tu email...">
-                        <br><br>
-                        <label for="nacimiento">Fecha Nac.(mm/dd/yyyy): </label>
-                        <input type="date" name="nacimiento">
-                        <p>Facción:
-                            <input type="radio" name="gender" value="Magis" checked>Magis
-                            <input type="radio" name="gender" value="Nobilii">Nobilii
-                            <input type="radio" name="gender" value="Otro"> Otro
-                        </p>
+
+                        <fieldset>
+                            <legend>Preparación</legend>
+                            <p>Conocimientos previos:
+                                <input type="checkbox" name="conocimientos" value="Hechiceria"> Hechicería
+                                <input type="checkbox" name="conocimientos" value="MagiaNegra"> Magia Negra
+                                <input type="checkbox" name="conocimientos" value="Conjuros"> Conjuros
+                                <input type="checkbox" name="conocimientos" value="Brujeria"> Brujería
+                                <input type="checkbox" name="conocimientos" value="Adivinacion"> Adivinación
+                                <input type="checkbox" name="conocimientos" value="Astral"> Astral
+                                <input type="checkbox" name="conocimientos" value="Otro"> Otro
+                            </p>
+                            <label for="estudios">Grado de estudios: </label>
+                            <select id="estudios" name="estudios">
+                                <option value="elementales">Elementales</option>
+                                <option value="basicos">Básicos</option>
+                                <option value="magistrales">Magistrales</option>
+                                <option value="altamagia">Alta Magia</option>
+                            </select>
+                            <br>
+                            <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5"
+                                cols="30"></textarea>
+                            <br><br>
+                            <input type="submit" value="Enviar">
+                            <button type="reset">Limpiar</button>
+                            <br>
+                        </fieldset>
                     </fieldset>
-                    <br><br>
-                    <img src="imgs\manos.gif" alt="Magia" width="30%">
-                    <br><br>
-                    <p> Conocimientos previos:
-                        <input type="checkbox" name="conocimientos" value="Hechiceria"> Hechicería
-                        <input type="checkbox" name="conocimientos" value="MagiaNegra"> Magia Negra
-                        <input type="checkbox" name="conocimientos" value="Conjuros"> Conjuros
-                        <input type="checkbox" name="conocimientos" value="Brujeria"> Brujería
-                        <input type="checkbox" name="conocimientos" value="Adivinacion"> Adivinación
-                        <input type="checkbox" name="conocimientos" value="Astral"> Astral
-                        <input type="checkbox" name="conocimientos" value="Otro"> Otro
-                    </p>
-                    <label for="estudios">Grado de estudios: </label>
-                    <select id="estudios" name="estudios">
-                        <option value="elementales">Elementales</option>
-                        <option value="basicos">Básicos</option>
-                        <option value="magistrales">Magistrales</option>
-                        <option value="altamagia">Alta Magia</option>
-                    </select>
-                    <br>
-                    <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5"
-                        cols="30"></textarea>
-                    <br><br>
-                    <input type="submit" value="Enviar">
-                    <button type="reset">Limpiar</button>
                 </form>
                 <br><br>
                 <p><b>Una vez evaluados, los postulantes serán contactados via correo electrónico, mensajería mágica o
