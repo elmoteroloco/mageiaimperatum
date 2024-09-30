@@ -4,126 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mageia Imperatum - Inscripción</title>
+    <link rel="icon" href="imgs\favic-mageia.ico" type="image/x-icon" />
+    <title>Mageia Imperatum - Registro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header>
+        <table>
+            <tr>
+                <td rowspan="3"><img src="imgs\logoMagiea.gif" alt="Logo" width=""></td>
+                <td>
+                    <h1>Mageia Imperatum</h1>
+                </td>
+            </tr>
+            <tr> </tr> <!--Espacio-->
+            <tr>
+                <td>
+                    <h4>El portal donde las opciones no tienen límite.</h4>
+                </td>
+            </tr>
+        </table>
+        <nav>
+            <ul>
+                <br><br>
+                <button><a href="index.html">Inicio</a></button>
+                <button><a href="codexrabidus.html">Codex Rabidus</a></button>
+                <button><a href="codexludis.html">Codex Ludis</a></button>
+                <button><a href="registro.html">Registro</a></button>
+                <button><a href="ubicacion.html">Ubicación</a></button>
+                <br><br>
+                <br><br>
+        </nav>
+    </header>
 
-    <Body style="background-color:teal; color:LightCyan">
-        <header>
-            <table>
-                <tr>
-                    <td rowspan="3"><img src="imgs\logoMagiea.gif" alt="Logo" width=""></td>
-                    <td>
-                        <h1>Mageia Imperatum</h1>
-                    </td>
-                </tr>
-                <tr> </tr>
-                <tr>
-                    <td>
-                        <h4>El portal donde las opciones no tienen límite.</h4>
-                    </td>
-                </tr>
-            </table>
-            <nav>
-                <ul>
-                    <br><br>
-                    <button><a href="index.html">Inicio</a></button>
-                    <button><a href="codexludis.html">Codex Ludis</a></button>
-                    <button><a href="codexrabidus.html">Codex Rabidus</a></button>
-                    <button><a href="registro.html">Registro</a></button>
-                    <button><a href="ubicacion.html">Ubicación</a></button>
-                    <br><br>
-                    <br><br>
-                    <div style="text-align: center;">
-                        <img src="imgs\divider01.png" alt="Divisor">
-                    </div>
-                    <br><br>
-                    <br><br>
-            </nav>
-
-            <main>
-                <section>
-                    <form action="https://formspree.io/f/xvgpjnoy" method="POST">
-                        <fieldset>
-                            <legend>Datos personales</legend>
-                            <label for="nombre">Nombre: </label>
-                            <input size="30" type="text" name="nombre" placeholder="Tu nombre...">
-                            <label for="apellido">Apellido:</label>
-                            <input size="30" type="text" name="apellido" placeholder="Tu apellido...">
-                            <br><br>
-                            <label for="direccion">Dirección:</label>
-                            <input type="text" name="direccion" placeholder="Tu dirección...">
-                            <label for="ciudad">Ciudad: </label>
-                            <input type="text" name="ciudad" value="Tu ciudad...">
-                            <br><br>
-                            <label for="codigopostal">Código Postal:</label>
-                            <input type="text" name="codigopostal" placeholder="Tu código postal...">
-                            <label for="telefono">Teléfono: </label>
-                            <input type="tel" name="telefono" placeholder="Ingrese su teléfono aquí ....">
-                            <br><br>
-                            <label for="nacimiento">Fecha Nac.(mm/dd/yyyy): </label>
-                            <input type="date" name="nacimiento">
-                            <p>Facción:
-                                <input type="radio" name="gender" value="Magis" checked>Magis
-                                <input type="radio" name="gender" value="Nobilii">Nobilii
-                                <input type="radio" name="gender" value="Otro"> Otro
-                            </p>
-                        </fieldset>
+    <main>
+        <section>
+            <span>
+                <form action="https://formspree.io/f/xvgpjnoy" method="POST">
+                    <fieldset>
+                        <legend>Datos personales</legend>
                         <br><br>
-                        <img src="imgs\manos.gif" alt="Magia" width="30%">
+                        <label for="nombredeusuario">Nombre de usuario: </label>
+                        <input size="30" type="text" name="nombredeusuario" placeholder="Tu nombre de usuario...">
                         <br><br>
-                        <p> Conocimientos previos:
-                            <input type="checkbox" name="conocimientos" value="Hechiceria"> Hechicería
-                            <input type="checkbox" name="conocimientos" value="MagiaNegra"> Magia Negra
-                            <input type="checkbox" name="conocimientos" value="Conjuros"> Conjuros
-                            <input type="checkbox" name="conocimientos" value="Brujeria"> Brujería
-                            <input type="checkbox" name="conocimientos" value="Adivinacion"> Adivinación
-                            <input type="checkbox" name="conocimientos" value="Astral"> Astral
-                            <input type="checkbox" name="conocimientos" value="Otro"> Otro
+                        <label for="nombre">Nombre: </label>
+                        <input size="30" type="text" name="nombre" placeholder="Tu nombre...">
+                        <label for="apellido">Apellido:</label>
+                        <input size="30" type="text" name="apellido" placeholder="Tu apellido...">
+                        <br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Tu email...">
+                        <br><br>
+                        <label for="nacimiento">Fecha Nac.(mm/dd/yyyy): </label>
+                        <input type="date" name="nacimiento">
+                        <p>Facción:
+                            <input type="radio" name="gender" value="Magis" checked>Magis
+                            <input type="radio" name="gender" value="Nobilii">Nobilii
+                            <input type="radio" name="gender" value="Otro"> Otro
                         </p>
-                        <label for="estudios">Grado de estudios: </label>
-                        <select id="estudios" name="estudios">
-                            <option value="elementales">Elementales</option>
-                            <option value="basicos">Básicos</option>
-                            <option value="magistrales">Magistrales</option>
-                            <option value="altamagia">Alta Magia</option>
-                        </select>
-                        <br>
-                        <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5"
-                            cols="30"></textarea>
-                        <br><br>
-                        <input type="submit" value="Enviar">
-                        <button type="reset">Limpiar</button>
-                    </form>
+                    </fieldset>
                     <br><br>
-                </section>
+                    <img src="imgs\manos.gif" alt="Magia" width="30%">
+                    <br><br>
+                    <p> Conocimientos previos:
+                        <input type="checkbox" name="conocimientos" value="Hechiceria"> Hechicería
+                        <input type="checkbox" name="conocimientos" value="MagiaNegra"> Magia Negra
+                        <input type="checkbox" name="conocimientos" value="Conjuros"> Conjuros
+                        <input type="checkbox" name="conocimientos" value="Brujeria"> Brujería
+                        <input type="checkbox" name="conocimientos" value="Adivinacion"> Adivinación
+                        <input type="checkbox" name="conocimientos" value="Astral"> Astral
+                        <input type="checkbox" name="conocimientos" value="Otro"> Otro
+                    </p>
+                    <label for="estudios">Grado de estudios: </label>
+                    <select id="estudios" name="estudios">
+                        <option value="elementales">Elementales</option>
+                        <option value="basicos">Básicos</option>
+                        <option value="magistrales">Magistrales</option>
+                        <option value="altamagia">Alta Magia</option>
+                    </select>
+                    <br>
+                    <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5"
+                        cols="30"></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                    <button type="reset">Limpiar</button>
+                </form>
+                <br><br>
                 <p><b>Una vez evaluados, los postulantes serán contactados via correo electrónico, mensajería mágica o
                         espíritus
                         benignos (Mediums), Adivinadores y Clarividentes no serán contactados</b></p>
                 <br><br>
-                <button><a href="index.html">Volver</a></button>
-            </main>
+            </span>
+        </section>
+    </main>
 
-            <footer>
-                <br><br>
-                <br><br>
-                <h5> 2024 <i>Mageia Imperatum</i>.</h5>
-                <table>
-                    <tr>
-                        <td rowspan="2"><img src="imgs\logo-WTFPL.png" alt="Logo WTFPL" width="40%"></td>
-                        <td>
-                            <h6><i>Sitio realizado únicamente con fines educativos y de aprendizaje</i></h6>
-                        </td>
-                        <td rowspan="2"><img src="imgs\logoMagiea02.gif" alt="Logo" width="10%"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h6><i>creado por <a href="https://github.com/elmoteroloco">elmoteroloco</a></i></h6>
-                        </td>
-                    </tr>
-                </table>
-            </footer>
-    </body>
+    <footer>
+        <br><br>
+        <span>
+            <p><img src="imgs\logoMagiea02.gif" alt="Logo 02" padding="0em" margin="0em" width="50px" height="50px">
+                <i>Sitio realizado únicamente con fines
+                    educativos y de aprendizaje.<br><br><br> creado por <a
+                        href="https://github.com/elmoteroloco">elmoteroloco</a></i><br><i>2024 <a
+                        href="https://github.com/elmoteroloco/mageiaimperatum"> Mageia Imperatum.</i></a>
+            </p>
+        </span>
+    </footer>
+</body>
 
 </html>

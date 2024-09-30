@@ -1,0 +1,60 @@
+* {
+    margin: 5;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans serif;
+}
+
+body {
+    text-align: center;
+    background-color: teal;
+    color: LightCyan;
+}
+
+header {
+    background-color: DarkSlateGray;
+    color: Silver
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: justify;
+}
+
+header nav {
+    text-align: start;
+    list-style-type: none;
+    text-decoration-line: none;
+    text-decoration-color: Silver;
+}
+
+button {
+    text-decoration-line: none;
+    text-decoration-color: none;
+    background-color: DarkSlateGray;
+    border-color: Black;
+    color: Ivory;
+}
+
+body p {
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: justify;
+}
+
+body span {
+    text-align: start;
+}
+
+
+footer {
+    background-color: DarkSlateGray;
+    color: Silver;
+}
+
+footer p {
+    text-align: start;
+    padding: 0em;
+    font-size: x-small;
+}
