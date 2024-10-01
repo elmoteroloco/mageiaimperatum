@@ -1,7 +1,7 @@
 * {
     margin: 5;
     padding: 0;
-    font-family: Verdana, Tahoma, sans serif;
+    font-family: Poppins, Verdana, Tahoma, Arial, "sans serif";
 }
 
 body {
@@ -12,14 +12,14 @@ body {
 
 header {
     background-color: DarkSlateGray;
-    color: Silver
+    color: rgb(134, 184, 138)
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 4em;
     margin: 0.5em;
-    padding: 0.5em;
-    text-align: justify;
+    padding: 0em;
+
 }
 
 header nav {
@@ -39,20 +39,32 @@ header nav button a {
 
 
 a:link {
-    color: #78acfa;
+    color: #51c405;
 }
 
 a:visited {
-    color: #e0a347;
+    color: #e2f8b9;
 }
 
 
 button {
+    outline-width: 2px;
+    border-width: thin;
     text-decoration-line: none;
     text-decoration-color: none;
     background-color: DarkSlateGray;
     border-color: Black;
-    color: Ivory;
+    color: PaleGreen;
+}
+
+fieldset button input {
+    outline-width: 2px;
+    border-width: thin;
+    text-decoration-line: none;
+    text-decoration-color: none;
+    background-color: DarkSlateGray;
+    border-color: Black;
+    color: PaleGreen;
 }
 
 body p {
@@ -68,7 +80,7 @@ body span {
 
 footer {
     background-color: DarkSlateGray;
-    color: Silver;
+    color: rgb(134, 184, 138)
 }
 
 footer p {
