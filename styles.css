@@ -25,9 +25,27 @@ header h1 {
 header nav {
     text-align: start;
     list-style-type: none;
-    text-decoration-line: none;
-    text-decoration-color: Silver;
 }
+
+header nav li a {
+    outline: none;
+    text-decoration: none;
+}
+
+header nav button a {
+    outline: none;
+    text-decoration: none;
+}
+
+
+a:link {
+    color: #78acfa;
+}
+
+a:visited {
+    color: #e0a347;
+}
+
 
 button {
     text-decoration-line: none;
