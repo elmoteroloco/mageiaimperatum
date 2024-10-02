@@ -12,14 +12,21 @@ body {
 
 header {
     background-color: DarkSlateGray;
-    color: rgb(134, 184, 138)
+    color: rgb(202, 255, 255)
 }
 
 header h1 {
     font-size: 4em;
     margin: 0.5em;
     padding: 0em;
+    text-align: justify;
+}
 
+header h4 {
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 0em;
+    text-align: center;
 }
 
 header nav {
@@ -30,6 +37,11 @@ header nav {
 header nav li a {
     outline: none;
     text-decoration: none;
+    padding: 5px 3px 0;
+}
+
+header nav li a :hover {
+    background: rgb(52, 112, 112);
 }
 
 header nav button a {
@@ -37,34 +49,61 @@ header nav button a {
     text-decoration: none;
 }
 
-
 a:link {
-    color: #51c405;
+    color: #c8ebb2;
 }
 
 a:visited {
-    color: #e2f8b9;
+    color: #9eeff5;
 }
-
 
 button {
-    outline-width: 2px;
-    border-width: thin;
-    text-decoration-line: none;
-    text-decoration-color: none;
-    background-color: DarkSlateGray;
-    border-color: Black;
+    padding: 4px 14px;
+    background-color: rgb(52, 112, 112);
     color: PaleGreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-fieldset button input {
-    outline-width: 2px;
-    border-width: thin;
-    text-decoration-line: none;
-    text-decoration-color: none;
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+button input {
+    padding: 4px 14px;
     background-color: DarkSlateGray;
-    border-color: Black;
     color: PaleGreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonup {
+    padding: 3px 10px;
+    background-color: rgb(85, 119, 119);
+    color: rgb(191, 252, 191);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonup:hover {
+    background-color: #45a049;
+}
+
+.buttonup:active {
+    background-color: #3e8e41;
+}
+
+body h3 {
+    text-align: start;
+    padding: 0.5em;
+    color: rgb(29, 49, 49);
 }
 
 body p {
@@ -76,7 +115,6 @@ body p {
 body span {
     text-align: start;
 }
-
 
 footer {
     background-color: DarkSlateGray;
