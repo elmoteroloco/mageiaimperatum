@@ -18,8 +18,8 @@ header {
 header h1 {
     font-size: 4em;
     margin: 0.5em;
-    padding: 0em;
-    text-align: justify;
+    padding-top: 0.5em;
+    text-align: center;
 }
 
 header h4 {
@@ -57,8 +57,22 @@ a:visited {
     color: #9eeff5;
 }
 
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    margin: 2px;
+    background-color: rgb(52, 112, 112);
+    color: rgb(191, 252, 191);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 button {
-    padding: 4px 14px;
+    padding: 8px 63px;
     background-color: rgb(52, 112, 112);
     color: PaleGreen;
     border: none;
@@ -67,7 +81,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2f4e30;
 }
 
 button:active {
@@ -75,7 +89,7 @@ button:active {
 }
 
 button input {
-    padding: 4px 14px;
+    padding: 2px 14px;
     background-color: DarkSlateGray;
     color: PaleGreen;
     border: none;
@@ -106,6 +120,18 @@ body h3 {
     color: rgb(29, 49, 49);
 }
 
+.cuerpo1 {
+    text-align: justify;
+    padding-top: 2em;
+    padding-right: 5em;
+}
+
+.cuerpo2 {
+    text-align: justify;
+    padding-top: 2em;
+    padding-right: 5em;
+}
+
 body p {
     margin: 0.5em;
     padding: 0.5em;
@@ -114,6 +140,10 @@ body p {
 
 body span {
     text-align: start;
+}
+
+hr {
+    border-color: rgb(29, 49, 49)
 }
 
 footer {
