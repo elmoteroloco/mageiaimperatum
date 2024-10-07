@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs\favic-mageia.ico" type="image/x-icon" />
     <title>Editorial - Mageia Imperatum</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -28,15 +31,17 @@
         <nav>
             <ul>
                 <br><br>
-                <div class="menu">
-                    <button><a href="index.html">Inicio</a></button>
-                    <button><a href="editorial.html">Editorial</a></button>
-                    <button><a href="trivia.html">Trivia</a></button>
-                    <button><a href="grimorio.html">Grimorios</a></button>
-                    <button><a href="mercado.html">Mercado</a></button>
-                    <button><a href="registro.html">Registro</a></button>
-                    <button><a href="forum.html">Forum</a></button>
-                    <button><a href="ubicacion.html">Ubicación</a></button>
+                <div class="nav-bg">
+                    <div class="menu contenedor">
+                        <a href="index.html">Inicio</a>
+                        <a href="editorial.html">Editorial</a>
+                        <a href="trivia.html">Trivia</a>
+                        <a href="grimorio.html">Grimorios</a>
+                        <a href="mercado.html">Mercado</a>
+                        <a href="registro.html">Registro</a>
+                        <a href="forum.html">Forum</a>
+                        <a href="ubicacion.html">Ubicación</a>
+                    </div>
                 </div>
                 <br>
         </nav>
@@ -45,125 +50,26 @@
     <main>
         <section>
             <h3><strong>Editorial</strong></h3>
-            <article><img src="imgs\jimcoding.gif" alt="Typing" style="width:15%; float: left; padding: 15px;">
-                <div class="cuerpo1">Arribaste, nauta de estos extraños tiempos, a este
+            <article class="editorial1"><img src="imgs\jimcoding.gif" alt="Typing"
+                    style="width:15%; float: left; margin: 0rem 2rem;">
+                <p class="cuerpo1">Arribaste, nauta de estos extraños tiempos, a este
                     espacio en el que encontraras novedades relativas al sitio y sus dependencias, si te registrás
                     recibirás en
                     tu casilla electrónica, un resumen semestral de actividades y jugosos descuentos en el Mercado de
-                    Curiosidades actualmente en construcción.</div>
+                    Curiosidades actualmente en construcción.</p>
             </article>
-            <img src="imgs\original5354.png" alt="Divisor">
+            <br><br><br>
             <h3>¡Novedades en el sitio!</h3>
-            <article>
+            <article class="editorial1">
                 <img src="imgs\generating.gif" alt="Generating" style="width:15%; float: left; padding: 15px;">
-                <div class="cuerpo1">¡Nuevas y excitantes noticias para los
+                <p class="cuerpo1">¡Nuevas y excitantes noticias para los
                     asiduos del Mageia Imperatum! ¡Una avalancha de innovaciones nos pone contra la pared a la hora de
                     actualizar el sitio! Las nuevas secciones incluirán un Mercado de coleccionables y curiosidades, un
                     debatible 'Forum' de discusión y un apartado de Preguntas Frecuentes. ¡No te lo
                     pierdas!
-                </div>
+                </p>
             </article>
-            <img src="imgs\original5354.png" alt="Divisor">
-        </section>
-
-        <section>
-            <h3>El Mercado en Mageia Imperatum.</h3>
-            <article>
-                <p>Por el momento y hasta que el propio Mercado de Curiosidades y Coleccionables este en pleno
-                    funcionamiento, te presentamos por este medio, estimado nauta, un pequeño avance de algunos de
-                    los
-                    productos que luego
-                    podrás encontrar en el sitio.</p>
-                <hr />
-                <hr />
-                <article>
-                    <h4>De la mano del genial Ciruelo algunas de sus famosas piezas de arte, que estarán disponibles en
-                        el
-                        Mercado de Curiosidades y Coleccionables.</h4>
-
-                    <span>
-                        <p><img src="imgs\1dracoblanco-ciruelo.png" alt="El Guardian Blanco, Gustavo Cabral" ;
-                                width=25%>
-                            <b>"El Guardian Blanco"</b>, <i>Gustavo "Ciruelo"
-                                Cabral</i>
-                        </p>
-                    </span>
-                    <br>
-                    <span>
-                        <p><img src="imgs\1librociruelo.png" alt="El Gran Libro del Dragón, Gustavo Cabral" ;
-                                width=20%;>
-                            <b>"El Gran Libro del Dragón"</b>, <i>Gustavo "Ciruelo"
-                                Cabral</i>
-                        </p>
-                    </span>
-                    <br>
-                </article>
-                <hr />
-            </article>
-
-            <article>
-                <br>
-                <h4>¿Tu corazón late por la facción de los creadores de efigies y momias en Tebalexand? Este
-                    printable
-                    puede decorar tu remera, tu taza ¡o tu pared! ¡No te lo
-                    pierdas!</h4>
-                <img src="imgs/2tebalexand_creaturas.png" alt="Printable Tebalexand: Creaturas" ; width="25%">
-                <hr />
-            </article>
-            <article>
-                <br>
-                <h4>Mazos de cartas de calidad excepcional, maravillosamente ilustrados con algunas de las más
-                    impresionantes creaturas de Mageia.</h4>
-                <img src="imgs\3-1cartas.png" alt="Mythical Creatures II Gold, Silver, Black;  cartas" width="30%">
-                <img src="imgs\3-2cartas.png" alt="Mythical Creatures II Gold, Silver, Black;  cartas" width="30%">
-                <img src="imgs\3-3cartas.png" alt="Mythical Creatures;  cartas" width="30%">
-                <hr />
-                <br>
-                <h4>¡El cosplay ideal para el próximo Fantasycon lo encontrás en el Mercado de Curiosidades!</h4>
-                <img src="imgs\4cosplay_diana_artemisa.png"
-                    alt="Cosplay (vestuario completo más implementos) de Diana-Artemisa" width="20%">
-                <hr />
-                <br>
-                <h4>Desde la zona del Kanato nos llegan estas delicadas miniaturas, mágicamente capturadas en ámbar
-                    cristalizado por artífices excepcionales, que muestran dos de las creaturas dracónidas típicas
-                    de la
-                    mitofauna
-                    de esa zona de la constelación.</h4>
-                <img src="imgs\5ambar1.png" alt="Dragon Oriental Cristal Ámbar" width="20%">
-                <img src="imgs\5ambar2.png" alt="Dragon Oriental Cristal Ámbar" width="20%">
-                <hr />
-                <br>
-                <h4>Aunque se los conoce por su ferocidad, muchos de quienes adoptan algún espécimen de la familia
-                    Kerberii, establecen fortísimos lazos afectivos con este, debido muy probablemente a la lealtad
-                    incondicional que los caracteriza.</h4>
-                <img src="imgs\6caerberus.png" alt="Miniatura de Cerberus" width="25%">
-                <hr />
-                <br>
-                <h4>Los herreros del cúmulo de enanas templadas Tyrion Doom forjaron estas excepcionales piezas
-                    desmontables y articuladas en sus fraguas, ¿te animarás a resolver el puzzle?</h4>
-                <img src="imgs\7Metalkitor.png" alt="Metalkitor, Escultura metálica articulada desmontable" width="30%">
-                <hr />
-                <br>
-                <h4>Esta es una pieza de colección inspirada en una de las creaciones del Maestro Luis Royo,
-                    disponible
-                    el código
-                    de impresión o la figurilla 3D, lista para ser decorada</h4>
-                <img src="imgs\7print.png" alt="Guerrera oriental, 3D printable" width="30%">
-                <hr />
-                <br>
-                <h4>Finalmente aunque no menos importantes, unos familiares con conjuros de protección para el hogar
-                    y
-                    los más pequeños</h4>
-                <img src="imgs\8gnom.png" alt="muñeco de tela, Gnome" width="20%">
-                <img src="imgs\8unicorn.png" alt="muñeco de tela, Unicornio" width="20%">
-                <hr />
-                <hr />
-                <br>
-                <h3>¡Muy pronto podrás conseguir todo esto y mucho más en el Mercado de Curiosidades y
-                    Coleccionables de
-                    Mageia Imperatum!</h3>
-            </article>
-            <img src="imgs\original5354.png" alt="Divisor">
+            <br><br><br>
         </section>
 
         <section>
@@ -210,6 +116,8 @@
                     seguro y no estresante, lo que potencia las interacciones valiosas y el crecimiento personal o
                     profesional.</p>
                 <br>
+            </article>
+            <article>
                 <img src="imgs\a1royo_guerrero.png" alt="Guerrero, Luis Royo"
                     style="width:15%; float: left; padding: 10px;">
                 <h3>-del Codex Ludis:</h3>
@@ -272,14 +180,16 @@
                     un
                     privilegio que pocos llegan a alcanzar.</p>
                 <br><br>
-                Por eso, estimado nauta, ¿a que esperar? ¡súmate ahora mismo a nuestra comunidad! ¡llena el
-                <a href="registro.html"><button class="buttonup">formulario de registro</button></a> y
-                disfruta de
-                todo lo que tenemos para ofrecerte!
-                ¡¡¡NO-TE-LO-PIER-DAS!!!
-
+                <p>Por eso, estimado nauta, ¿a que esperar? ¡súmate ahora mismo a nuestra comunidad! ¡llena el
+                    <a href="registro.html"><button class="buttonup">formulario de registro</button></a> y
+                    disfruta de
+                    todo lo que tenemos para ofrecerte!
+                    ¡¡¡NO-TE-LO-PIER-DAS!!!
+                </p>
             </article>
-            <img src="imgs\original5354.png" alt="Divisor">
+            <div class="divisedit">
+                <img src="imgs\original5354.png" alt="Divisor">
+            </div>
         </section>
     </main>
 
@@ -287,11 +197,13 @@
         <br><br>
         <span>
             <p><img src="imgs\logoMageia02.gif" alt="Logo 02" padding="0em" margin="0em" width="50px" height="50px">
-                <i>Sitio realizado únicamente con fines
-                    educativos y de aprendizaje.<br><br><br> creado por <a
-                        href="https://github.com/elmoteroloco">elmoteroloco</a></i><br><i>2024 <a
-                        href="https://github.com/elmoteroloco/mageiaimperatum"> Mageia Imperatum.</i></a>
+                Sitio realizado únicamente con fines educativos y de aprendizaje.<br><br><br>
             </p>
+
+            <nav class=footnav>
+                <li>creado por: <a href="https://github.com/elmoteroloco">elmoteroloco</a></li>
+                <li><a href="https://github.com/elmoteroloco/mageiaimperatum">2024 Mageia Imperatum.</a></li>
+            </nav>
         </span>
     </footer>
 </body>

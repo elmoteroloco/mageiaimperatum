@@ -1,13 +1,18 @@
 * {
-    margin: 5;
+    margin: 0;
     padding: 0;
     font-family: Poppins, Verdana, Tahoma, Arial, "sans serif";
 }
 
+html {
+    font-size: 62.5%
+}
+
 body {
+    font-size: 16px;
     text-align: left;
-    background-color: teal;
-    color: LightCyan;
+    background-color: rgb(2, 143, 143);
+    color: rgb(220, 255, 255);
 }
 
 header {
@@ -16,59 +21,61 @@ header {
 }
 
 header h1 {
-    font-size: 4em;
-    margin: 0.5em;
-    padding-top: 0.5em;
+    font-size: 6rem;
+    margin: 0;
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
 }
 
 header h4 {
-    font-size: 1.5em;
-    margin: 0.5em;
-    padding: 0em;
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 0.75rem;
     text-align: center;
 }
 
-header nav {
-    text-align: start;
-    list-style-type: none;
-}
-
 header nav li a {
-    outline: none;
     text-decoration: none;
-    padding: 5px 3px 0;
+    padding: 0.5rem 0.3rem;
+    color: rgb(202, 255, 255)
 }
 
 header nav li a :hover {
-    background: rgb(52, 112, 112);
+    background: rgb(2, 143, 143);
+    color: rgb(29, 49, 49);
 }
 
-header nav button a {
-    outline: none;
-    text-decoration: none;
+.contenedor {
+    width: 110rem;
+    margin: 0 auto;
 }
 
-a:link {
-    color: #c8ebb2;
+.nav-bg {
+    background-color: rgb(2, 143, 143);
 }
-
-a:visited {
-    color: #9eeff5;
-}
-
 
 .menu {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    padding: 0;
-    margin: 2px;
-    background-color: rgb(52, 112, 112);
-    color: rgb(191, 252, 191);
+}
+
+.menu a {
+    color: rgb(18, 24, 24);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
     cursor: pointer;
+}
+
+.menu a:hover {
+    background-color: #294429;
+    color: rgb(202, 255, 255)
 }
 
 button {
@@ -97,6 +104,14 @@ button input {
     cursor: pointer;
 }
 
+main {
+    padding: 0 0.35rem;
+}
+
+.editorial1 {
+    margin: 1rem 0;
+}
+
 .buttonup {
     padding: 3px 10px;
     background-color: rgb(85, 119, 119);
@@ -113,7 +128,7 @@ button input {
 body h3 {
     text-align: start;
     padding: 0.5em;
-    color: rgb(29, 49, 49);
+    color: rgb(18, 24, 24);
 }
 
 .cuerpo1 {
@@ -138,12 +153,16 @@ body span {
 }
 
 hr {
-    border-color: rgb(29, 49, 49)
+    border-color: rgb(18, 24, 24)
 }
 
 .grimorio {
-    background-image: url('/imgs/nochevert.png');
+    background-image: url('/imgs/paper-cuadrat.jpg');
     background-size: cover;
+    background-color: rgb(18, 24, 24);
+    margin: 0;
+    color: rgb(18, 24, 24);
+    font-weight: 500;
 }
 
 .registro {
@@ -151,17 +170,32 @@ hr {
     background-repeat: no-repeat;
     background-size: 75% 100%;
     background-position: right;
-    background-color: rgb(26, 24, 24)
+    background-color: rgb(18, 24, 24)
+}
+
+.divisedit {
+    text-align: center;
 }
 
 footer {
-    background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
+    background: linear-gradient(to right, rgb(18, 24, 24), DarkSlateGray);
     margin: 0;
-    color: rgb(134, 184, 138)
+    color: rgb(202, 255, 255)
 }
 
 footer p {
     text-align: start;
-    padding: 0em;
-    font-size: x-small;
+    padding: 0rem;
+    font-size: small;
+}
+
+footer .footnav li a {
+    text-decoration: none;
+    padding: 0.5rem 0.3rem;
+    color: rgb(202, 255, 255)
+}
+
+footer .footnav li a :hover {
+    background: rgb(2, 143, 143);
+    color: rgb(29, 49, 49);
 }

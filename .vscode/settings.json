@@ -11,9 +11,12 @@
         "Castalón",
         "codigopostal",
         "creaturas",
+        "cuadrat",
         "direccion",
+        "divisedit",
         "dracónidas",
         "Fantasycon",
+        "footnav",
         "github",
         "grimorio",
         "Grimorios",
@@ -56,6 +59,7 @@
         "teleportación",
         "teleportadores",
         "tubulaciones",
+        "Tubulacionistas",
         "Tyrion"
     ]
 }
