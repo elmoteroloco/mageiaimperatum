@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: DarkSlateGray;
+    background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
     color: rgb(202, 255, 255)
 }
 
@@ -110,10 +110,6 @@ button input {
     background-color: #45a049;
 }
 
-.buttonup:active {
-    background-color: #3e8e41;
-}
-
 body h3 {
     text-align: start;
     padding: 0.5em;
@@ -126,19 +122,8 @@ body h3 {
     padding-right: 5em;
 }
 
-.cuerpo2 {
-    text-align: left;
-    padding-top: 2em;
-    padding-right: 5em;
-}
-
 .ludis {
     font-family: Verdana;
-    font-size: 18;
-}
-
-.rabidus {
-    font-family: Tahoma;
     font-size: 18;
 }
 
@@ -156,8 +141,21 @@ hr {
     border-color: rgb(29, 49, 49)
 }
 
+.grimorio {
+    background-image: url('/imgs/nochevert.png');
+    background-size: cover;
+}
+
+.registro {
+    background-image: url('/imgs/manos.gif');
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    background-position: right;
+    background-color: rgb(26, 24, 24)
+}
+
 footer {
-    background: linear-gradient(to bottom, rgb(91, 136, 136), rgb(32, 58, 58));
+    background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
     margin: 0;
     color: rgb(134, 184, 138)
 }
