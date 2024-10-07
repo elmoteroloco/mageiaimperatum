@@ -157,9 +157,9 @@ hr {
 }
 
 .grimorio {
-    background-image: url('/imgs/paper-cuadrat.jpg');
+    /*background-image: url('/imgs/paper-cuadrat.jpg');*/
     background-size: cover;
-
+    background-color: rgb(18, 24, 24);
     margin: 0;
     color: rgb(18, 24, 24);
     font-weight: 500;
