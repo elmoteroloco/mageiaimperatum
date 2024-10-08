@@ -157,8 +157,8 @@ hr {
 }
 
 .grimorio {
-    /*background-image: url('/imgs/paper-cuadrat.jpg');*/
-    background-size: cover;
+    background-image: url('/imgs/paper-cuadrat.jpg');
+    /*background-size: cover;*/
     background-color: rgb(18, 24, 24);
     margin: 0;
     color: rgb(18, 24, 24);
@@ -166,11 +166,8 @@ hr {
 }
 
 .registro {
-    background-image: url('/imgs/manos.gif');
-    background-repeat: no-repeat;
-    background-size: 75% 100%;
-    background-position: right;
-    background-color: rgb(18, 24, 24)
+    background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
+    color: rgb(202, 255, 255);
 }
 
 .divisedit {
@@ -178,7 +175,7 @@ hr {
 }
 
 footer {
-    background: linear-gradient(to right, rgb(18, 24, 24), DarkSlateGray);
+    background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
     margin: 0;
     color: rgb(202, 255, 255)
 }
