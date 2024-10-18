@@ -10,46 +10,73 @@ html {
 
 body {
     font-size: 16px;
+    font-weight: 450;
     text-align: left;
-    background-color: rgb(2, 143, 143);
-    color: rgb(220, 255, 255);
+    background: linear-gradient(to right, rgb(2, 143, 143), rgb(202, 255, 255));
+    color: rgb(18, 24, 24);
 }
 
 header {
     background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
-    color: rgb(202, 255, 255)
+    color: rgb(202, 255, 255);
+    position: sticky;
+    top: 0px;
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    list-style: none;
+    margin: 0;
+}
+
+.encab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    list-style: none;
+    margin: 0;
 }
 
 header h1 {
-    font-size: 6rem;
+    font-size: 4.2rem;
     margin: 0;
-    padding-top: 4.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
 header h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
-    padding-top: 2.5rem;
-    padding-bottom: 0.75rem;
+    padding-top: 1.5rem;
     text-align: center;
 }
 
-header nav li a {
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 1rem 0
+}
+
+.nav-list a {
     text-decoration: none;
-    padding: 0.5rem 0.3rem;
+    text-decoration-line: none;
+    padding: 0.1rem 0;
+    font-weight: 700;
     color: rgb(202, 255, 255)
 }
 
-header nav li a :hover {
-    background: rgb(2, 143, 143);
+.nav-list a:hover {
+    background: rgb(202, 255, 255);
     color: rgb(29, 49, 49);
-}
-
-.contenedor {
-    width: 110rem;
-    margin: 0 auto;
 }
 
 .nav-bg {
@@ -58,7 +85,11 @@ header nav li a :hover {
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 200rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
 }
 
 .menu a {
@@ -108,33 +139,43 @@ main {
     padding: 0 0.35rem;
 }
 
+.showbox {
+    margin: 0 25%;
+}
+
 .editorial1 {
     margin: 1rem 0;
 }
 
 .buttonup {
-    padding: 3px 10px;
+    margin-left: 80%;
+}
+
+.buttonup,
+.buttonreg {
+    padding: 0.3rem 1rem;
     background-color: rgb(85, 119, 119);
     color: rgb(191, 252, 191);
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
-.buttonup:hover {
+.buttonup,
+.buttonreg:hover {
     background-color: #45a049;
 }
 
 body h3 {
     text-align: start;
-    padding: 0.5em;
+    padding: 0.5rem;
     color: rgb(18, 24, 24);
 }
 
 .cuerpo1 {
     text-align: left;
-    padding-top: 2em;
-    padding-right: 5em;
+    padding-top: 2rem;
+    padding-right: 5rem;
 }
 
 .ludis {
@@ -143,8 +184,8 @@ body h3 {
 }
 
 body p {
-    margin: 0.5em;
-    padding: 0.5em;
+    margin: 0.5rem;
+    padding: 0.5rem;
     text-align: left;
 }
 
@@ -154,6 +195,11 @@ body span {
 
 hr {
     border-color: rgb(18, 24, 24)
+}
+
+.finale {
+    text-align: center;
+    padding: 1rem;
 }
 
 .grimorio {
@@ -170,10 +216,81 @@ hr {
 .registro {
     background: linear-gradient(to right, rgb(0, 0, 0), DarkSlateGray);
     color: rgb(202, 255, 255);
+    padding: 1.5rem 0.5rem;
 }
 
 .divisedit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article h4 {
     text-align: center;
+    padding: 0.5rem;
+}
+
+.cajas {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.linkbox {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem 0.3rem;
+    color: rgb(29, 49, 49)
+}
+
+.linkbox:hover {
+    background: rgb(202, 255, 255);
+    color: rgb(2, 143, 143);
+}
+
+.mercado {
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.mercado h4 {
+    margin-bottom: 3.5rem;
+}
+
+.succo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cajasucco {
+    text-align: center;
+    width: 22rem;
+    border: 0.1rem solid rgb(202, 255, 255);
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+}
+
+.localtitl h5 {
+    text-align: center;
+    font-size: large;
+    padding: 2rem;
+}
+
+.local {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cajalocal {
+    text-align: left;
+    width: auto;
+}
+
+.cajalocal p {
+    margin: 3rem 0rem
 }
 
 footer {
@@ -182,19 +299,27 @@ footer {
     color: rgb(202, 255, 255)
 }
 
-footer p {
-    text-align: start;
-    padding: 0rem;
-    font-size: small;
+.disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
 }
 
-footer .footnav li a {
+.footnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.navfoot a {
     text-decoration: none;
     padding: 0.5rem 0.3rem;
     color: rgb(202, 255, 255)
 }
 
-footer .footnav li a :hover {
+.navfoot a:hover {
     background: rgb(2, 143, 143);
     color: rgb(29, 49, 49);
 }
