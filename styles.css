@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-family: Poppins, Verdana, Tahoma, Arial, "sans serif";
+}
+
+html {
+    font-size: 75%;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background: linear-gradient(to right, rgb(2, 143, 143), rgb(202, 255, 255));
+    color: rgb(18, 24, 24);
+}
+
+/* Menu - Header */
+
+header {
+    position: sticky;
+    top: 0px;
+    box-shadow: 1rem 0.1rem 1rem rgba(18, 24, 24, 50%);
+    z-index: 1000;
+}
+
+.nav-bg {
+    background-color: rgb(2, 143, 143);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 200rem; */
+    margin: 0.3rem 1rem 0.3rem 0;
+}
+
+@media (min-width: 600px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 75%;
+    }
+}
+
+.menu a {
+    padding: 1rem;
+    box-shadow: 1rem 0.1rem 1rem rgba(18, 24, 24, 50%);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        background-color: rgb(29, 49, 49);
+        margin: 0.4rem 0;
+    }
+}
+
+.menu a:hover {
+    background-color: rgb(29, 49, 49);
+}
+
+.fi-rr-shopping-bag,
+.fi-brands-whatsapp {
+    font-weight: 700;
+    font-size: x-large;
+    color: rgb(202, 255, 255);
+}
+
+.logomenu {
+    width: 40px;
+    height: 40px;
+}
+
+/* Contenido */
+
+main {
+    padding: 0 0.35rem;
+}
+
+body h3 {
+    text-align: start;
+    padding: 0.5rem;
+    padding-top: 8rem;
+    color: rgb(18, 24, 24);
+}
+
+body p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* Útiles */
+
+.l-simple {
+    width: 100%;
+    height: 0.1rem;
+    margin: 1rem 0;
+    background-color: rgb(18, 24, 24);
+}
+
+.listsep {
+    margin: 0.7rem 0;
+}
+
+.divisedit {
+    display: flex;
+    justify-content: center;
+}
+
+.divisedit img {
+    width: 33%;
+}
+
+/* Pseudo-Hero */
+
+.encabbg {
+    background-image: url(imgs/hero_001.2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.3rem;
+    min-height: 175px;
+    position: relative;
+}
+
+.encab {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    color: rgb(202, 255, 255);
+    border-radius: 0.3rem;
+}
+
+.cajaencab {
+    text-align: center;
+}
+
+.logoa {
+    width: 60%;
+}
+
+.logob {
+    width: 50%;
+}
+
+.encab h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.encab h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+/* Navegación */
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 1rem;
+}
+
+.nav-list a {
+    font-weight: 700;
+    color: rgb(202, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-list a:hover {
+    background: rgb(202, 255, 255);
+    color: rgb(29, 49, 49);
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+}
+
+.buttonup {
+    margin-left: 75%;
+    padding: 2.5rem;
+    cursor: pointer;
+}
+
+.buttonup .irarriba {
+    color: rgba(18, 24, 24);
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(18, 24, 24, 30%);
+    font-size: x-large;
+    transition: all 0.5s ease-in-out;
+}
+
+.irarriba:hover {
+    color: rgb(202, 255, 255);
+    background-color: rgb(18, 24, 24);
+}
+
+@media (max-width: 600px) {
+    .buttonup {
+        margin-left: 55%;
+    }
+    .buttonup .irarriba {
+        color: rgb(202, 255, 255);
+        background-color: rgb(18, 24, 24);
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49, 30%);
+        padding: 0.5rem 5rem;
+        border-radius: 0.3rem;
+    }
+}
+
+.botonprods {
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.botonprods .al-landing {
+    color: rgb(18, 24, 24);
+    font-weight: 700;
+    font-size: x-large;
+    background-color: rgb(2, 143, 143);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49, 30%);
+    padding: 0rem 3rem;
+    padding-top: 1rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.al-landing:hover {
+    color: rgb(202, 255, 255);
+    background-color: rgb(29, 49, 49);
+}
+
+.botoncart {
+    text-align: right;
+    padding: 0rem 3rem;
+    padding-top: 1rem;
+    border-radius: 0.3rem;
+}
+
+.botoncart button {
+    margin: 1rem 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: rgb(18, 24, 24);
+    font-weight: 700;
+    font-size: xx-large;
+    background-color: rgb(202, 255, 255);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49, 30%);
+}
+
+@media (max-width: 600px) {
+    .botoncart {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.botonformul {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonformul button,
+.botonsubmit button {
+    margin: 0.8rem 0;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(202, 255, 255, 30%);
+}
+
+@media (min-width: 600px) {
+    .botonformul {
+        flex-direction: row;
+    }
+
+    .botonformul button {
+        margin: 0 0.8rem;
+    }
+}
+
+/* Index */
+
+.cuerpo1 {
+    display: flex;
+}
+
+.c1img-left {
+    width: 15%;
+    height: 15%;
+    padding: 1.5rem;
+}
+
+.c1img-right {
+    width: 15%;
+    height: 15%;
+    padding: 1.5rem;
+}
+
+/* Trivia */
+
+.trivtitulo {
+    text-align: right;
+}
+
+.triviamain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trivimg {
+    width: 30%;
+}
+
+.cajatrivia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.triv {
+    display: flex;
+    justify-content: center;
+}
+
+.trivnota {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 860px) {
+    .trivnota {
+        flex-direction: row;
+    }
+}
+
+/* Ludis */
+
+.ludis {
+    font-family: Verdana;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ludis img {
+    width: 100%;
+}
+
+/* Video */
+
+.showbox {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .showbox {
+        width: 65%;
+    }
+}
+
+.centrarvid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.finale {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .finale {
+        flex-direction: row;
+    }
+}
+
+/* Mercado */
+
+.reseñas h3 {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(18, 24, 24);
+}
+
+.gridreseñas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .gridreseñas {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.card {
+    display: flex;
+    background-image: url(imgs/hero_001.2.png);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 20%), 0 0.6rem 2rem 0 rgba(0, 0, 0, 19%);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardrese {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    .cardrese {
+        flex-direction: row;
+    }
+}
+
+.cardrese img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 40%), 0 0.6rem 2rem 0 rgba(0, 0, 0, 20%);
+}
+
+.cardrese h3 {
+    text-align: left;
+    color: rgb(202, 255, 255);
+}
+
+.cardrese p {
+    text-align: left;
+    padding: 0.2rem;
+    color: rgb(202, 255, 255);
+}
+
+.cardconten .nom {
+    font-weight: 700;
+}
+
+.cardconten .opi {
+    font-style: italic;
+}
+
+.mercado {
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.sectit-mercado {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.mercado h3 {
+    text-align: center;
+    color: rgb(18, 24, 24);
+    margin-bottom: 1.6rem;
+}
+
+.prods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: rgb(18, 24, 24);
+}
+
+.imgprod {
+    width: 65%;
+}
+
+.box-prods {
+    text-align: center;
+    width: 22rem;
+    border: 0.1rem solid rgb(18, 24, 24);
+    background: rgb(0, 89, 89);
+    color: rgb(202, 255, 255);
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+}
+
+.box-prods p {
+    text-align: center;
+}
+
+.cajasprods {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/* LandPages */
+
+/* Cthulhu */
+/* Cthulhu II */
+
+.dungeon {
+    display: flex;
+    border: none;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    margin: 0.5rem;
+}
+
+.cthulhu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 860px) {
+    .cthulhu {
+        flex-direction: row;
+    }
+}
+
+.cthulhu p {
+    font-size: 1.5rem;
+    padding-top: 3.5rem;
+}
+
+.imgdungeon-a {
+    width: 40%;
+    height: 40%;
+    padding: 1rem;
+}
+
+.imgdungeon-b {
+    width: 40%;
+    height: 40%;
+    padding: 1rem;
+}
+
+@media (max-width: 860px) {
+    .imgdungeon-a {
+        width: 90%;
+        height: 90%;
+    }
+    .imgdungeon-b {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.cierre {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 0.5rem;
+    border: none;
+    box-shadow: 0.3rem 0rem 0rem 0rem rgba(18, 24, 24, 30%);
+}
+
+.img-cierre {
+    width: 80%;
+    height: 80%;
+}
+
+@media (min-width: 600px) {
+    .cierre {
+        flex-direction: row;
+    }
+}
+
+/* ¡Fun play! */
+
+.funplayh2 {
+    text-align: center;
+    font-size: xxx-large;
+    font-family: Impact, Arial Bold, sans-serif;
+    color: rgb(214, 72, 29);
+    margin: 2.6rem;
+    border: 0.1rem solid rgb(18, 24, 24);
+    background: rgb(255, 149, 118);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+}
+
+.container {
+    width: 70%;
+}
+
+.fplaylistbg {
+    display: flex;
+    margin: 2rem auto;
+}
+
+.fplaylist {
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.fplaylista {
+    padding-left: 1rem;
+}
+
+.fplaylistb {
+    padding-left: 2.5rem;
+}
+
+.fplayredes-conten {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2.6rem auto;
+    padding: 1rem;
+    border: 0.1rem solid rgb(18, 24, 24);
+    background: rgb(255, 149, 118);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+}
+
+.fplayredesbg {
+    background: rgb(214, 72, 29);
+    border: 1rem solid rgb(18, 24, 24);
+    border-radius: 0.5rem;
+}
+
+.fplayredes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.fplayredes a {
+    margin: 0 1rem;
+    color: rgb(18, 24, 24);
+    font-size: x-large;
+    align-items: center;
+    text-decoration-line: none;
+}
+
+/* Contacto */
+
+.cajalocal {
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    color: rgb(202, 255, 255);
+    border: 0.1rem solid rgb(18, 24, 24);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    text-align: center;
+    width: min(80rem, 80%);
+}
+
+.donde-enco {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .donde-enco {
+        flex-direction: row;
+    }
+}
+
+.donde-enco-box {
+    text-align: center;
+    font-size: medium;
+    padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .donde-enco-box p {
+        font-size: small;
+    }
+}
+
+.formulario {
+    padding: 2rem;
+}
+
+.formulbg {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    color: rgb(202, 255, 255);
+    border: 0.1rem solid rgb(18, 24, 24);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    width: min(80rem, 80%);
+}
+
+.contac {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto fieldset {
+    border: none;
+}
+
+.datos {
+    border: none;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.cont-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .cont-campos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 600px) {
+    .largo {
+        grid-column: 1 / span 2;
+    }
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text {
+    width: 95%;
+    border: none;
+    padding: 1rem 0.2rem;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    color: rgb(202, 255, 255);
+}
+
+.disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.footnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.footredes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.footredes a {
+    margin: 0 1rem;
+    color: rgb(202, 255, 255);
+    font-size: x-large;
+}
