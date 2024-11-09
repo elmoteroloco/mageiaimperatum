@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/favicmageia.ico" type="image/x-icon">
     <title>Crisol | Mageia Imperatum</title>
-    <link rel="preload" href="normalize.css" as="style">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="css/modern-normalize.css" as="style">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
@@ -27,10 +30,10 @@
             <ul>
                 <div class="nav-bg">
                     <div class="menu">
-                        <a href="index.html"><img class="logomenu" src="imgs/logoMageiaT.gif"
+                        <a class="boton-menu" href="index.html"><img class="logomenu" src="imgs/logoMageiaT.gif"
                                 alt="'Logo A', animación abstracta danzante"></a>
-                        <a href="mercado.html"><i class="fi fi-rr-shopping-bag"></i></a>
-                        <a href="contacto.html"><i class="fi fi-brands-whatsapp"></i></a>
+                        <a class="boton-menu" href="mercado.html"><i class="fi fi-rr-shopping-bag"></i></a>
+                        <a class="boton-menu" href="contacto.html"><i class="fi fi-brands-whatsapp"></i></a>
                     </div>
                 </div>
             </ul>
@@ -58,21 +61,72 @@
                 </div>
             </div>
         </section>
-        <section>
 
+        <section class="crisol-section">
+            <h2>Crisol</h2>
+            <h3>estilo en accesorios</h3>
 
+            <div class="crisol-item-largo">
+                <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a.jpg"
+                    alt="Imagen de producto">
+                <div class="crisol-prod-txt">
+                    <p></p>
+                </div>
+            </div>
 
+            <div class="crisol-items-centro">
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-llavero-b.jpg"
+                        alt="Imagen de producto">
+                    <div class="crisol-prod-txt">
+                        <p></p>
+                    </div>
+                </div>
 
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-b.jpg"
+                        alt="Imagen de producto">
+                    <div class="crisol-prod-txt">
+                        <p></p>
+                    </div>
+                </div>
 
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-llavero-a.jpg"
+                        alt="Imagen de producto">
+                    <div class="crisol-prod-txt">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="crisol-item-largo">
+                <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-soporte-cel.jpg"
+                    alt="Imagen de producto">
+                <div class="crisol-prod-txt">
+                    <p></p>
+                </div>
+            </div>
+            <div class="cierre">
+                <div>
+                    <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                        alt="Flecha verde animada señalando botón de compra">
+                </div>
+                <div class="botoncart"><button><i class="fi fi-rr-shopping-bag-add"></i></button>
+                </div>
+            </div>
             <div class="divisedit">
-                <img src="imgs/original5354002.png" alt="Marca de final del contenido"">
-        </div>
-    </section>
-</main>
+                <img src="imgs/original5354002.png" alt="Marca de final del contenido">
+            </div>
+        </section>
 
-    <footer>
-        <div class=" disclaimer">
+
+
+    </main>
+
+    <footer class="footerbg">
+        <div class="footergradient">
+            <div class=" disclaimer">
                 <p>Sitio realizado únicamente con fines educativos y de aprendizaje.</p>
             </div>
             <div class="footnav">
@@ -87,7 +141,8 @@
             <div class="footredes">
                 <div class="link-gh"><a href="https://github.com"><i class="fi fi-brands-github"></i></a></div>
                 <div class="navfoot"><b> · · </b></div>
-                <div class="link-yt"><a href="https://www.youtube.com"><i class="fi fi-brands-youtube"></i></a></div>
+                <div class="link-yt"><a href="https://www.youtube.com"><i class="fi fi-brands-youtube"></i></a>
+                </div>
                 <div class="navfoot"><b> · · </b></div>
                 <div class="link-pinterest"><a href="https://ar.pinterest.com"><i
                             class="fi fi-brands-pinterest"></i></a>
@@ -97,7 +152,8 @@
                 </div>
             </div>
             <div class="listsep"></div>
-            </footer>
+        </div>
+    </footer>
 
 </body>
 

@@ -1,16 +1,21 @@
+:root {
+    --oscuro: rgba(0, 0, 0, 90%);
+    --claro: rgba(57, 82, 82, 90%);
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     text-decoration-line: none;
-    font-family: Poppins, Verdana, Tahoma, Arial, "sans serif";
+    font-family: Poppins, Verdana, Tahoma, Arial, sans-serif;
 }
 
 html {
     font-size: 75%;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     html {
         font-size: 62.5%;
     }
@@ -28,9 +33,9 @@ body {
 
 header {
     position: sticky;
-    top: 0px;
+    top: 1px;
     box-shadow: 1rem 0.1rem 1rem rgba(18, 24, 24, 50%);
-    z-index: 1000;
+    z-index: 10;
 }
 
 .nav-bg {
@@ -40,11 +45,10 @@ header {
 .menu {
     display: flex;
     flex-direction: column;
-    /* max-width: 200rem; */
     margin: 0.3rem 1rem 0.3rem 0;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .menu {
         flex-direction: row;
         justify-content: space-evenly;
@@ -60,14 +64,14 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .menu a {
         background-color: rgb(29, 49, 49);
         margin: 0.4rem 0;
     }
 }
 
-.menu a:hover {
+.boton-menu:hover {
     background-color: rgb(29, 49, 49);
 }
 
@@ -127,10 +131,9 @@ body p {
 /* Pseudo-Hero */
 
 .encabbg {
-    background-image: url(imgs/hero_001.2.png);
+    background-image: url("../imgs/hero_001.2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0.3rem;
     min-height: 175px;
     position: relative;
 }
@@ -142,7 +145,7 @@ body p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
     color: rgb(202, 255, 255);
     border-radius: 0.3rem;
 }
@@ -190,13 +193,6 @@ body p {
     transition: all 0.5s ease-in-out;
 }
 
-.nav-list a:hover {
-    background: rgb(202, 255, 255);
-    color: rgb(29, 49, 49);
-    padding: 0.7rem 2rem;
-    border-radius: 2rem;
-}
-
 .buttonup {
     margin-left: 75%;
     padding: 2.5rem;
@@ -217,14 +213,15 @@ body p {
     background-color: rgb(18, 24, 24);
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .buttonup {
         margin-left: 55%;
     }
+
     .buttonup .irarriba {
         color: rgb(202, 255, 255);
         background-color: rgb(18, 24, 24);
-        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49, 30%);
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49 30%);
         padding: 0.5rem 5rem;
         border-radius: 0.3rem;
     }
@@ -240,8 +237,8 @@ body p {
     font-weight: 700;
     font-size: x-large;
     background-color: rgb(2, 143, 143);
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49, 30%);
-    padding: 0rem 3rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49 30%);
+    padding: 0 3rem;
     padding-top: 1rem;
     border-radius: 0.3rem;
     transition: all 0.5s ease-in-out;
@@ -254,7 +251,7 @@ body p {
 
 .botoncart {
     text-align: right;
-    padding: 0rem 3rem;
+    padding: 0 3rem;
     padding-top: 1rem;
     border-radius: 0.3rem;
 }
@@ -268,10 +265,10 @@ body p {
     font-weight: 700;
     font-size: xx-large;
     background-color: rgb(202, 255, 255);
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49, 30%);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49 30%);
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .botoncart {
         display: flex;
         flex-direction: column;
@@ -286,10 +283,10 @@ body p {
 .botonformul button,
 .botonsubmit button {
     margin: 0.8rem 0;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(202, 255, 255, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(202, 255, 255 30%);
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .botonformul {
         flex-direction: row;
     }
@@ -350,7 +347,7 @@ body p {
     flex-direction: column;
 }
 
-@media (min-width: 860px) {
+@media (width >= 860px) {
     .trivnota {
         flex-direction: row;
     }
@@ -359,13 +356,9 @@ body p {
 /* Ludis */
 
 .ludis {
-    font-family: Verdana;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.ludis img {
-    width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 550;
 }
 
 /* Video */
@@ -375,7 +368,7 @@ body p {
     width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .showbox {
         width: 65%;
     }
@@ -394,7 +387,7 @@ body p {
     padding: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .finale {
         flex-direction: row;
     }
@@ -402,32 +395,32 @@ body p {
 
 /* Mercado */
 
-.reseñas h3 {
+.resenhas h3 {
     text-align: center;
     margin-top: 2rem;
     color: rgb(18, 24, 24);
 }
 
-.gridreseñas {
+.gridresenhas {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     padding: 1rem;
 }
 
-@media (min-width: 600px) {
-    .gridreseñas {
+@media (width >= 600px) {
+    .gridresenhas {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
 .card {
     display: flex;
-    background-image: url(imgs/hero_001.2.png);
+    background-image: url("../imgs/hero_001.2.png");
     border-radius: 1rem;
     margin: 1rem;
     padding: 1rem;
-    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 20%), 0 0.6rem 2rem 0 rgba(0, 0, 0, 19%);
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0 20%), 0 0.6rem 2rem 0 rgba(0, 0, 0 19%);
     transition: all 0.3s ease-in-out;
 }
 
@@ -441,7 +434,7 @@ body p {
     flex-direction: column;
 }
 
-@media (min-width: 480px) {
+@media (width >= 480px) {
     .cardrese {
         flex-direction: row;
     }
@@ -451,7 +444,7 @@ body p {
     width: 9rem;
     height: 9rem;
     border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 40%), 0 0.6rem 2rem 0 rgba(0, 0, 0, 20%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0 40%), 0 0.6rem 2rem 0 rgba(0, 0, 0 20%);
 }
 
 .cardrese h3 {
@@ -508,7 +501,7 @@ body p {
     color: rgb(202, 255, 255);
     padding: 1rem 0;
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24 30%);
 }
 
 .box-prods p {
@@ -523,13 +516,14 @@ body p {
 
 /* LandPages */
 
-/* Cthulhu */
-/* Cthulhu II */
+/* -Cthulhu */
+
+/* -Cthulhu II */
 
 .dungeon {
     display: flex;
     border: none;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24 30%);
     margin: 0.5rem;
 }
 
@@ -538,7 +532,7 @@ body p {
     flex-direction: column;
 }
 
-@media (min-width: 860px) {
+@media (width >= 860px) {
     .cthulhu {
         flex-direction: row;
     }
@@ -561,11 +555,12 @@ body p {
     padding: 1rem;
 }
 
-@media (max-width: 860px) {
+@media (width <= 860px) {
     .imgdungeon-a {
         width: 90%;
         height: 90%;
     }
+
     .imgdungeon-b {
         width: 90%;
         height: 90%;
@@ -578,7 +573,7 @@ body p {
     justify-content: right;
     margin-right: 0.5rem;
     border: none;
-    box-shadow: 0.3rem 0rem 0rem 0rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.3rem 0, 0, 0 rgba(18, 24, 24 30%);
 }
 
 .img-cierre {
@@ -586,8 +581,60 @@ body p {
     height: 80%;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .cierre {
+        flex-direction: row;
+    }
+}
+
+/* -Crisol */
+
+.crisol-section {
+    background-image: url("../imgs/crisol-pexels-crisol-a.jpg");
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.crisol-section h2 {
+    color: rgb(255, 147, 0);
+    font-size: xxx-large;
+    font-family: Montserrat, "Arial Bold", Verdana, sans-serif;
+}
+
+.crisol-section h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    color: rgb(255, 147, 0);
+    font-size: large;
+    font-family: Montserrat, "Arial Bold", Verdana, sans-serif;
+}
+
+.crisol-prod-img {
+    width: 85%;
+    height: 85%;
+    transition: all 0.3s ease-in-out;
+}
+
+.crisol-prod-img:hover {
+    transform: scale(1.15);
+}
+
+.crisol-items-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+}
+
+@media (width >= 600px) {
+    .crisol-items-centro {
         flex-direction: row;
     }
 }
@@ -597,13 +644,13 @@ body p {
 .funplayh2 {
     text-align: center;
     font-size: xxx-large;
-    font-family: Impact, Arial Bold, sans-serif;
+    font-family: Impact, "Arial Bold", Verdana, sans-serif;
     color: rgb(214, 72, 29);
     margin: 2.6rem;
     border: 0.1rem solid rgb(18, 24, 24);
     background: rgb(255, 149, 118);
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24 30%);
 }
 
 .container {
@@ -639,7 +686,7 @@ body p {
     border: 0.1rem solid rgb(18, 24, 24);
     background: rgb(255, 149, 118);
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24 30%);
 }
 
 .fplayredesbg {
@@ -665,13 +712,21 @@ body p {
 
 /* Contacto */
 
+.local {
+    background-image: url("../imgs/hero_001.2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+}
+
 .cajalocal {
-    margin: 0 auto;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    margin: auto;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
     color: rgb(202, 255, 255);
     border: 0.1rem solid rgb(18, 24, 24);
     border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24 30%);
     text-align: center;
     width: min(80rem, 80%);
 }
@@ -682,7 +737,7 @@ body p {
     flex-direction: column;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .donde-enco {
         flex-direction: row;
     }
@@ -694,24 +749,44 @@ body p {
     padding: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .donde-enco-box p {
         font-size: small;
     }
 }
 
+.showmap {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.showmap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0.3rem;
+}
+
+/* Formulario */
+
 .formulario {
     padding: 2rem;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
 }
 
 .formulbg {
     margin: 0 auto;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+    background-image: url("../imgs/hero_001.2.png");
     color: rgb(202, 255, 255);
     border: 0.1rem solid rgb(18, 24, 24);
     border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24, 30%);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24 30%);
     width: min(80rem, 80%);
 }
 
@@ -744,13 +819,13 @@ legend {
     grid-gap: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .cont-campos {
         grid-template-columns: 1fr;
     }
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
     .largo {
         grid-column: 1 / span 2;
     }
@@ -775,8 +850,19 @@ label {
 
 /* Footer */
 
-footer {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(57, 82, 82, 0.9));
+.footerbg {
+    background-image: url("../imgs/hero_001.2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110px;
+    position: relative;
+}
+
+.footergradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
     color: rgb(202, 255, 255);
 }
 
@@ -805,4 +891,21 @@ footer {
     margin: 0 1rem;
     color: rgb(202, 255, 255);
     font-size: x-large;
+}
+
+.nav-list a:hover {
+    background: rgb(202, 255, 255);
+    color: rgb(29, 49, 49);
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+}
+
+.fplayredes a:hover {
+    color: rgb(202, 255, 255);
+}
+
+.footredes a:hover {
+    background: rgb(202, 255, 255);
+    color: rgb(29, 49, 49);
+    border-radius: 0.3rem;
 }

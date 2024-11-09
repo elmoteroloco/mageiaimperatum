@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/favicmageia.ico" type="image/x-icon">
     <title>Mercado | Mageia Imperatum</title>
-    <link rel="preload" href="normalize.css" as="style">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="css/modern-normalize.css" as="style">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
@@ -29,10 +29,10 @@
             <ul>
                 <div class="nav-bg">
                     <div class="menu">
-                        <a href="index.html"><img class="logomenu" src="imgs/logoMageiaT.gif"
+                        <a class="boton-menu" href="index.html"><img class="logomenu" src="imgs/logoMageiaT.gif"
                                 alt="'Logo A', animación abstracta danzante"></a>
-                        <a href="mercado.html"><i class="fi fi-rr-shopping-bag"></i></a>
-                        <a href="contacto.html"><i class="fi fi-brands-whatsapp"></i></a>
+                        <a class="boton-menu" href="mercado.html"><i class="fi fi-rr-shopping-bag"></i></a>
+                        <a class="boton-menu" href="contacto.html"><i class="fi fi-brands-whatsapp"></i></a>
                     </div>
                 </div>
             </ul>
@@ -62,10 +62,10 @@
         </section>
 
         <section>
-            <div class="reseñas">
+            <div class="resenhas">
                 <h3 class="sectit-mercado">Reseñas</h3>
             </div>
-            <div class="gridreseñas">
+            <div class="gridresenhas">
                 <div class="card">
                     <div class="cardrese">
                         <div class="cardconten">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="box-prods">
-                        <img class="imgprod" src="imgs\merc-pexels-coppertist-wu-joyeria-b.png"
+                        <img class="imgprod" src="imgs/merc-pexels-coppertist-wu-joyeria-b.png"
                             alt="Llavero con figura de dragón">
                         <h2 class="cajasprods">"Crisol"</h2>
                         <p>Artesanía en bronce.</p>
@@ -142,7 +142,7 @@
                     <div class="box-prods">
                         <img class="imgprod" src="imgs/colcF11.jpg" alt="Fotos de personas en cosplay">
                         <h2 class="cajasprods">"¡Fun-play!"</h2>
-                        <p>Diseño de cosplay.</p>
+                        <p>Cosplay y eventos.</p>
                         <div class="botonprods">
                             <a class="al-landing" href="funplay.html" target="_blank"><i
                                     class="fi fi-rs-magnifying-glass-eye"></i></a>
@@ -156,31 +156,35 @@
         </div>
     </main>
 
-    <footer>
-        <div class=" disclaimer">
-            <p>Sitio realizado únicamente con fines educativos y de aprendizaje.</p>
+    <footer class="footerbg">
+        <div class="footergradient">
+            <div class=" disclaimer">
+                <p>Sitio realizado únicamente con fines educativos y de aprendizaje.</p>
+            </div>
+            <div class="footnav">
+                <div class="navfoot">
+                    <p>desarrollo: elmoteroloco</p>
+                </div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="navfoot">
+                    <p>2024 Mageia Imperatum.</p>
+                </div>
+            </div>
+            <div class="footredes">
+                <div class="link-gh"><a href="https://github.com"><i class="fi fi-brands-github"></i></a></div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="link-yt"><a href="https://www.youtube.com"><i class="fi fi-brands-youtube"></i></a>
+                </div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="link-pinterest"><a href="https://ar.pinterest.com"><i
+                            class="fi fi-brands-pinterest"></i></a>
+                </div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="link-devian"><a href="https://www.deviantart.com"><i class="fi fi-brands-devianart"></i></a>
+                </div>
+            </div>
+            <div class="listsep"></div>
         </div>
-        <div class="footnav">
-            <div class="navfoot">
-                <p>desarrollo: elmoteroloco</p>
-            </div>
-            <div class="navfoot"><b> · · </b></div>
-            <div class="navfoot">
-                <p>2024 Mageia Imperatum.</p>
-            </div>
-        </div>
-        <div class="footredes">
-            <div class="link-gh"><a href="https://github.com"><i class="fi fi-brands-github"></i></a></div>
-            <div class="navfoot"><b> · · </b></div>
-            <div class="link-yt"><a href="https://www.youtube.com"><i class="fi fi-brands-youtube"></i></a></div>
-            <div class="navfoot"><b> · · </b></div>
-            <div class="link-pinterest"><a href="https://ar.pinterest.com"><i class="fi fi-brands-pinterest"></i></a>
-            </div>
-            <div class="navfoot"><b> · · </b></div>
-            <div class="link-devian"><a href="https://www.deviantart.com"><i class="fi fi-brands-devianart"></i></a>
-            </div>
-        </div>
-        <div class="listsep"></div>
     </footer>
 </body>
 
