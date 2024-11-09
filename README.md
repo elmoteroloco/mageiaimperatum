@@ -4,7 +4,7 @@
 <br/>
 <div align="center"><img src="imgs\cartoon-1688_256_julientromeur.gif"></img></div>
 <h3>Acerca de</h3>
-En este primer tramo se agregarán los componentes del proyecto al repositorio de Github y se someterán a un test de evaluación provisto por TalentoTech a fin de establecer los parámetros de funcionalidad del proyecto.
+En este primer tramo se agregan los componentes del proyecto al repositorio de Github y se someten a un test de evaluación provisto por TalentoTech a fin de conocer las mecánicas utilizadas en la profesión para establecer parámetros de funcionalidad de proyectos.
 
 <h3>Metas y requisitos</h3>
 
