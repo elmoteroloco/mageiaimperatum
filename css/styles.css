@@ -622,7 +622,7 @@ body p {
 }
 
 .crisol-prod-img:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .crisol-items-centro {
@@ -637,6 +637,27 @@ body p {
     .crisol-items-centro {
         flex-direction: row;
     }
+}
+
+.crisol-prod-txt p {
+    color: rgb(255, 147, 0);
+    background-color: var(--oscuro);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* -Fun Play */
+
+.fplay {
+    background-image: url("../imgs/funplay-pexels-alexander-shustov-4476291.jpg");
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.3rem;
+    text-align: center;
 }
 
 /* ¡Fun play! */
