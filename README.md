@@ -42,7 +42,30 @@ En este primer tramo se agregan los componentes del proyecto al repositorio de G
 para visualizar el sitio.
 
 <h3>Estado del proyecto</h3>
-Carga inicial del Index.html y carpeta css.
+<h4>Mapa de ruta</h4>
+
+- Carga inicial del Index.html y carpeta css. (v0.01 - Autograding Tests #1)
+- Primer actualización, corrección de errores Html y Css. (v0.02 - Autograding Tests #2)
+- Segunda actualización con correcciones. (v0.03 - Autograding Tests #3)
+- Segunda actualización. (v0.04 - Autograding Tests #4)
+- Segunda actualización. (v0.05 - Autograding Tests #5)
+- Delete mageiaimperatum/normalize.css --innecesario. (v0.06 - Autograding Tests #6)
+- Delete mageiaimperatum/imgs directory --innecesario. (v0.07 - Autograding Tests #7)
+- Actualización 3 (v0.08 -  - Autograding Tests #8)
+- Delete mageiaimperatum directory --redundante. (v0.09 - Autograding Tests #9)
+- Modificaciones en el repositorio y la configuración del Autograding Test por parte de Talento Tech. (Autograding Tests #10 - #11 - #12 - #13)
+- Add files via upload. (v0.10 - Autograding Tests #14)
+- Delete styles.css --redundante. (v0.11 - Autograding Tests #15)
+- Correcciones en archivo de estilos. (v0.12 - Autograding Tests #16)
+- Modificaciones en archivo de estilos. (v0.13 - Autograding Tests #17)
+- Correcciones en pagina de estilos .css. (v0.14 - Autograding Tests #18 'Apto')
+- Actualización 09-11-24. (Autograding Tests #19 'Apto')
+- Version de Pre-entrega 10-11 v1.01. (Autograding Tests #20 'Apto')
+- Merge pull request #1 from Talento-Tech-Front-End/main. (Autograding Tests #21)
+- Version de Pre-entrega 10-11 v1.02. (Autograding Tests #22)
+- Version de Pre-entrega 10-11 v1.03. (Autograding Tests #23)
+- Version de Pre-entrega 10-11 v1.02. (Autograding Tests #24 'Apto')
+- Version de Pre-entrega 16-11 v1.04. (Autograding Tests #25) (versión actual)
 
 <h3>Acreditaciones</h3>
 
@@ -53,7 +76,12 @@ Carga inicial del Index.html y carpeta css.
 <div align="center"><img src="imgs\pexels-calvin-wright-2037506675-29140938.jpg"></img></div>
 
 - Materiales
-  - El formato de este README está inspirado en el proyecto de: <a href="https://twitter.com/r4dixx" target="_blank">Amaël Sikel</a> README-STUDENT.md
+  - El formato de este README está moderadamente inspirado en el proyecto de: <a href="https://twitter.com/r4dixx" target="_blank">Amaël Sikel</a> README-STUDENT.md
 
 <h3>Licencia</h3>
 El proyecto se suscribirá a la licencia MIT. Ver la <a href="LICENCIA.md">licencia</a> y el <a href="LICENSE.DISCLAIMER.md">descargo de responsabilidades</a>.
+
+<div>
+<h3>El sitio resultante puede encontrarse en:</h3>
+- https://mageiaimperatum.netlify.app/
+</div>
