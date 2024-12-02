@@ -43,6 +43,8 @@ para visualizar el sitio.
 
 <h3>Estado del proyecto</h3>
 Carga inicial del Index.html y carpeta css.
+Se actualizó el proyecto con correcciones solicitadas por sistema "autograding"
+Carga inicial en GitHub para Proyecto Integrador Final
 
 <h3>Acreditaciones</h3>
 
