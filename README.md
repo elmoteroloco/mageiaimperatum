@@ -41,10 +41,74 @@ En este primer tramo se agregan los componentes del proyecto al repositorio de G
 (Netlify o GitHub Pages), con una URL funcional
 para visualizar el sitio.
 
+<h2>Puntos clave - (Proyecto Integrador Final)</h2>
+
+Sobre el resultado del Proyecto de Pre-entrega se implementará:
+
+- Uso de Bootstrap y Git
+  - Reemplazar el nav creado anteriormente por el
+navbar responsivo creado con Bootstrap.
+  - Adaptar la navbar de Bootstrap a la paleta de
+colores de tu proyecto.
+  - El proyecto debe estar en un repositorio GitHub,
+con commits que documenten los cambios.
+
+- Funcionalidad JavaScript
+  - Crear un archivo script.js y linkearlo en el documento
+HTML.
+  - Debemos poder revisar el código por medio del
+inspector que nos ofrece nuestro navegador y
+asegurarnos de que nuestro proyecto no nos está
+dando ningún error.
+
+- Condicionales y ciclos
+  - Implementar una función que verifique si todos los
+campos del formulario de contacto están
+completos, mostrando un mensaje en la consola.
+  - Crear un ciclo que genere dinámicamente una
+lista de productos disponibles y los muestre en la
+consola.
+
+- Manipulación Básica del DOM y Eventos
+  - Implementar un evento click que muestra la
+descripción ampliada del producto que clickeamos.
+  - Crear un listado de productos incluidos en nuestro
+HTML generado por medio de una función en Js.
+
+- Funciones Modulares
+  - Crear de una función que cree un array de
+productos y los muestre en la página utilizando
+una plantilla HTML dinámica.
+
+- Carrito de compras
+  - Debemos tener implementado un carrito de
+compras que permita a los usuarios añadir
+productos desde las cards, utilizando localStorage
+y sessionStorage para almacenar la información
+del carrito.
+  - Los productos en el carrito se deben poder
+visualizar, editar (cambiar la cantidad) y eliminar.
+  - La información debe mantenerse después de
+recargar la página.
+
+● Mostrar elementos dinámicos en el HTML a partir de
+datos JSON.
+
+● Utilizar la manipulación del DOM para integrar los
+datos obtenidos en la interfaz.
+
+● El proyecto debe estar subido a GitHub con un
+historial de commits que documenten el progreso.
+
+
 <h3>Estado del proyecto</h3>
-Carga inicial del Index.html y carpeta css.
-Se actualizó el proyecto con correcciones solicitadas por sistema "autograding"
-Carga inicial en GitHub para Proyecto Integrador Final
+
+- Carga inicial del Index.html y carpeta css.
+- Se actualizó el proyecto con las correcciones solicitadas por sistema "autograding".
+- 02/12/2024 Carga inicial (beta) en GitHub para *Proyecto Integrador Final*.
+  - Actualización de este Readme con los *Puntos clave* correspondientes al *Proyecto Integrador Final*.
+  - Actualización de los .HTML con un Navbar responsivo realizado mediante Bootstrap editado y en modalidad *Dark*.
+
 
 <h3>Acreditaciones</h3>
 
