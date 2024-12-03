@@ -3,16 +3,40 @@
 <p align="center">Proyecto estudiantil de un sitio de 'e-commerce' en el curso de Front-end JS '24227' de Talento Tech.</p>
 <br/>
 <div align="center"><img src="imgs\cartoon-1688_256_julientromeur.gif"></img></div>
-<h3>Acerca de</h3>
-En este primer tramo se agregan los componentes del proyecto al repositorio de Github y se someten a un test de evaluación provisto por TalentoTech a fin de conocer las mecánicas utilizadas en la profesión para establecer parámetros de funcionalidad de proyectos.
+<hr>
 
+<a name="top"></a>
+
+**Indice.**
+
+**[· Acerca de.](#sec1)**
+
+**[· Metas y requisitos.](#sec2)**
+
+**[·· Puntos clave - Pre-entrega.](#sec3)**
+
+**[·· Puntos clave - Proyecto Integrador Final.](#sec4)**
+
+**[· Estado del proyecto - Historial de cambios.](#sec5)**
+
+**[· Acreditaciones.](#sec6)**
+
+**[· Licencia.](#sec7)**
+
+<a id="sec1"></a>
+<h3>Acerca de</h3>
+En el primer tramo se agregan los componentes del proyecto al repositorio de Github provisto por Talento Tech y se someten a un test de evaluación a fin de conocer las mecánicas utilizadas en la profesión para establecer parámetros de funcionalidad de proyectos.
+
+El segundo cometido de éste estudio, el **Proyecto Integrador Final**, incluye la profundización en el manejo de los elementos del FrontEnd con más la incorporación de elementos de dinámica interactiva desde la programación en javascript, la utilización y edición de Bootstrap, principios de manejo y entendimiento del DOM y los eventos básicos, validación de formularios e implementación de mecánicas de cierre de ventas con un 'carrito' funcional.
+<a id="sec2"></a>
 <h3>Metas y requisitos</h3>
 
 - Crear un sitio de e-commerce
 - Aprender los fundamentos de HTML, CSS y JS
 - Aprender a utilizar un repositorio de Github
 
-<h2>Puntos clave - (Pre-entrega)</h2>
+<a id="sec3"></a>
+<h2>Puntos clave - Pre-entrega</h2>
 
 - Estructura Básica de HTML.
     - Estructura semántica: El HTML debe estar dividido en las etiquetas semánticas principales: header, nav, main, section, footer.
@@ -41,7 +65,10 @@ En este primer tramo se agregan los componentes del proyecto al repositorio de G
 (Netlify o GitHub Pages), con una URL funcional
 para visualizar el sitio.
 
-<h2>Puntos clave - (Proyecto Integrador Final)</h2>
+[^al Indice^](#top)
+
+<a id="sec4"></a>
+<h2>Puntos clave - Proyecto Integrador Final</h2>
 
 Sobre el resultado del Proyecto de Pre-entrega se implementará:
 
@@ -100,17 +127,23 @@ datos obtenidos en la interfaz.
 ● El proyecto debe estar subido a GitHub con un
 historial de commits que documenten el progreso.
 
+[^al Indice^](#top)
 
-<h3>Estado del proyecto</h3>
+<a id="sec5"></a>
+<h2>Estado del proyecto - Historial de cambios</h2>
 
 - Carga inicial del Index.html y carpeta css.
+
 - Se actualizó el proyecto con las correcciones solicitadas por sistema "autograding".
+
 - 02/12/2024 Carga inicial (beta) en GitHub para *Proyecto Integrador Final*.
   - Actualización de este Readme con los *Puntos clave* correspondientes al *Proyecto Integrador Final*.
   - Actualización de los .HTML con un Navbar responsivo realizado mediante Bootstrap editado y en modalidad *Dark*.
 
+[^al Indice^](#top)
 
-<h3>Acreditaciones</h3>
+<a id="sec6"></a>
+<h2>Acreditaciones</h2>
 
 - Media
     - <a href="https://pixabay.com/es/" target="_blank">"Pixabay"</a> · (eventualmente se agregaran las acreditaciones individuales)
@@ -121,5 +154,8 @@ historial de commits que documenten el progreso.
 - Materiales
   - El formato de este README está inspirado en el proyecto de: <a href="https://twitter.com/r4dixx" target="_blank">Amaël Sikel</a> README-STUDENT.md
 
-<h3>Licencia</h3>
+<a id="sec7"></a>
+<h2>Licencia</h2>
 El proyecto se suscribirá a la licencia MIT. Ver la <a href="LICENCIA.md">licencia</a> y el <a href="LICENSE.DISCLAIMER.md">descargo de responsabilidades</a>.
+
+[^al Indice^](#top)
