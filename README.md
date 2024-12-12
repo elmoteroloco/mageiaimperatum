@@ -139,7 +139,18 @@ historial de commits que documenten el progreso.
 - 02/12/2024 Carga inicial (beta) en GitHub para *Proyecto Integrador Final*.
   - Actualización de este Readme con los *Puntos clave* correspondientes al *Proyecto Integrador Final*.
   - Actualización de los .HTML con un Navbar responsivo realizado mediante Bootstrap editado y en modalidad *Dark*.
-
+- 12/12/2024 Carga final de version beta (beta.1.0) con modificaciones mayores según descripción siguiente:
+  - Incorporación de mecánica de Tienda Virtual cumpliendo con los requisitos del Proyecto Integrador
+  - Edición de los botones de comando en carousel bootstrap en el land-page 'funplay'.
+  - Archivos Javascript ('ventas.js' y 'ventasmageia.js').
+  - Función de verificación en el formulario de Solicitud de Productos ('ventasmageia.js')
+  - Listado de productos seleccionados presentado en los land-pages de ventas para confirmar compra
+  - Array de productos presentado en pagina de cierre de venta ('ventasmageia.html') mediante función y plantilla HTML dinámica.
+  - Se implementan distintos procedimientos iniciados por eventos click ('pagar', 'limpiarCarrito' y 'agregarProducto')
+  - El carrito de compras permite añadir productos desde las cards utilizando localStorage, visualizándose los productos y pudiéndose cancelar la selección.
+  - La información cargada por el carrito de compras se mantiene al refrescar la pagina y se elimina si se cancela la misma.
+  - La función que genera el cierre de la venta muestra elementos dinámicos en el HTML a partir de datos JSON ('ventasmageia.html')
+  - Se utilizan mecánicas de manejo del DOM para integrar los datos obtenidos en la interfaz.
 [^al Indice^](#top)
 
 <a id="sec6"></a>
