@@ -60,12 +60,32 @@ header {
     background-color: rgb(29, 49, 49);
 }
 
+.fi-rr-store-buyer,
 .fi-rr-shopping-bag,
-.fi-brands-whatsapp {
+.fi-brands-whatsapp,
+.fi-rr-edit {
     font-weight: 700;
-    font-size: x-large;
+    font-size: xx-large;
     color: rgb(202, 255, 255);
     padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+
+.fi-rr-shopping-bag {
+    padding-left: 0rem;
+    font-size: medium;
+}
+
+.fi-rr-square-info {
+    font-size: larger;
+}
+
+.info {
+    border: none;
+    background-color: rgb(214, 72, 29);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
 }
 
 .logomenu {
@@ -537,6 +557,112 @@ body p {
 
 /* LandPages */
 
+/* Tienda */
+
+.tiendabg {
+    background-image: url("../imgs/hero_001.2.png");
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0), 0 0.6rem 2rem 0 rgb(73, 73, 73);
+    transition: all 0.5s ease-in-out;
+}
+
+.tiendabg hr {
+    color: rgb(202, 255, 255);
+}
+
+.tienda {
+    display: flex;
+    justify-content: center;
+}
+
+.tiendasub {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (width >= 780px) {
+    .tiendasub {
+        flex-direction: row;
+    }
+}
+
+.tiendasub .botoncart {
+    padding-left: 20rem;
+    font-size: medium;
+}
+
+.botoncart .pagar,
+.botoncart .vaciarbolsa {
+    font-size: medium;
+}
+
+.botoncart p {
+    color: rgb(202, 255, 255);
+}
+
+@media (width <= 780px) {
+    .tiendasub .botoncart {
+        padding-left: 3rem;
+    }
+}
+
+.tiendalista h3 {
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(202, 255, 255);
+}
+
+.tiendalista p {
+    text-align: center;
+    padding: 0.2rem;
+    color: rgb(202, 255, 255);
+}
+
+.precierre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+@media (width <= 860px) {
+    .precierre {
+        flex-direction: column;
+    }
+}
+
+.precierre h3 {
+    margin: 0rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(202, 255, 255);
+}
+
+.cierre {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+.img-cierre {
+    width: 80%;
+    height: 80%;
+}
+
+@media (width >= 600px) {
+    .cierre {
+        flex-direction: row;
+    }
+}
+
 /* -Cthulhu */
 
 /* -Cthulhu II */
@@ -585,25 +711,6 @@ body p {
     .imgdungeon-b {
         width: 90%;
         height: 90%;
-    }
-}
-
-.cierre {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-right: 0.5rem;
-    border: none;
-}
-
-.img-cierre {
-    width: 80%;
-    height: 80%;
-}
-
-@media (width >= 600px) {
-    .cierre {
-        flex-direction: row;
     }
 }
 
@@ -668,6 +775,14 @@ body p {
 }
 
 /* -Fun Play */
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d6481d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d6481d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 
 .fplay {
     background-image: url("../imgs/funplay-pexels-alexander-shustov-4476291.jpg");
@@ -832,12 +947,17 @@ body p {
     width: min(80rem, 80%);
 }
 
-.contac {
+.contac,
+.contactop {
     padding-top: 3.5rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contactop {
+    font-size: xx-large;
 }
 
 .contacto fieldset {
@@ -887,8 +1007,15 @@ label {
     width: 95%;
     border: none;
     background-color: rgb(202, 255, 255);
+    color: black;
     padding: 1rem 0.2rem;
     border-radius: 0.5rem;
+}
+
+/* Ventas Mageia */
+
+#detalle {
+    color: rgb(202, 255, 255);
 }
 
 /* Footer */

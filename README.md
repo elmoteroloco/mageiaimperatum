@@ -103,7 +103,7 @@ descripción ampliada del producto que clickeamos.
 HTML generado por medio de una función en Js.
 
 - Funciones Modulares
-  - Crear de una función que cree un array de
+  - Crear una función que cree un array de
 productos y los muestre en la página utilizando
 una plantilla HTML dinámica.
 
@@ -158,4 +158,4 @@ historial de commits que documenten el progreso.
 <h2>Licencia</h2>
 El proyecto se suscribirá a la licencia MIT. Ver la <a href="LICENCIA.md">licencia</a> y el <a href="LICENSE.DISCLAIMER.md">descargo de responsabilidades</a>.
 
-[^al Indice^](#top)
+[^al Indice^](#top)# mageiacarrito

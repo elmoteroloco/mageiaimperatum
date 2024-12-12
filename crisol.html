@@ -41,7 +41,8 @@
                         <a class="nav-link active boton-menu" aria-current="page" href="index.html"><img
                                 class="logomenu" src="imgs/logoMageiaT.gif" alt="'Logo A', animación abstracta danzante"
                                 title="Logo A" /></a>
-                        <a class="nav-link boton-menu" href="mercado.html"><i class="fi fi-rr-shopping-bag"></i></a>
+                        <a class="nav-link boton-menu" href="mercado.html"><i class="fi fi-rr-store-buyer"></i><i
+                                class="fi fi-rr-shopping-bag"></i></a>
                         <a class="nav-link boton-menu" href="contacto.html"><i class="fi fi-brands-whatsapp"></i></a>
                     </div>
                 </div>
@@ -75,11 +76,72 @@
             <h2>crisol</h2>
             <h3>estilo en accesorios</h3>
 
-            <div class="crisol-item-largo">
-                <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a.jpg"
-                    alt="Imagen de producto" title="Joyería A" />
-                <div class="crisol-prod-txt">
-                    <p>nuestros productos exclusivos están diseñados pensando en tu originalidad</p>
+            <div class="tienda">
+                <div class="tiendasub">
+                    <div class="tiendalista">
+                        <h3>Tienda virtual</h3>
+                        <div id="carrito"></div>
+                    </div>
+                    <div class="botoncart"><button id="btnPagar" class="cart pagar" onclick="pagar()"><i
+                                class="fi fi-rr-seller"></i>
+                            Comprar</button>
+                        <button id="btnLimpiar" class="cart vaciarbolsa" onclick="limpiarCarrito()"><i
+                                class="fi fi-rr-basket-shopping-minus"></i>
+                            Cancelar compra</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="crisol-items-centro">
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a-tentaculos.jpg"
+                        alt="Imagen de producto" title="Tentáculos" />
+                    <div class="crisol-prod-txt">
+                        <p>anillo en plata sterling patinada, "Tentáculos" - $45000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Tentáculos', 45000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a-ouroboros.jpg"
+                        alt="Imagen de producto" title="Joyería B" />
+                    <div class="crisol-prod-txt">
+                        <p>anillo en plata sterling patinada, "Ouroboros" - $45000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Ouroboros', 45000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a-mamboreta.jpg"
+                        alt="Imagen de producto" title="Llavero A" />
+                    <div class="crisol-prod-txt">
+                        <p>pendiente / broche en bronce patinado y acero "Mamboretá" - $23000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Mamboretá', 23000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -88,7 +150,16 @@
                     <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-llavero-b.jpg"
                         alt="Imagen de producto" title="Llavero B" />
                     <div class="crisol-prod-txt">
-                        <p>llavero de presilla en bronce ¨Aguilucho¨ - código de compra GL608</p>
+                        <p>llavero de presilla en bronce ¨Aguilucho¨ - $14000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Aguilucho', 14000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
                     </div>
                 </div>
 
@@ -96,7 +167,16 @@
                     <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-b.jpg"
                         alt="Imagen de producto" title="Joyería B" />
                     <div class="crisol-prod-txt">
-                        <p>pendiente en bronce ¨Smaugh¨ - código de compra GL609</p>
+                        <p>pendiente en bronce ¨Smaugh¨ - $18000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Smaugh', 18000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
                     </div>
                 </div>
 
@@ -104,7 +184,16 @@
                     <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-llavero-a.jpg"
                         alt="Imagen de producto" title="Llavero A" />
                     <div class="crisol-prod-txt">
-                        <p>llavero de presilla en bronce ¨Violinista¨ - código de compra GL610</p>
+                        <p>llavero de presilla en bronce ¨Violinista¨ - $15000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Violinista', 15000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +202,7 @@
                 <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-soporte-cel.jpg"
                     alt="Imagen de producto" title="Soporte de celular" />
                 <div class="crisol-prod-txt">
-                    <p>accesorio de escritorio en bronce plateado/patinado, ¨King Cobra¨ - código de compra SP231/SP232
+                    <p>accesorio de escritorio en bronce plateado/patinado, ¨King Cobra¨ - $65000
                     </p>
                 </div>
             </div>
@@ -122,7 +211,8 @@
                     <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
                         alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
                 </div>
-                <div class="botoncart"><button class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('King Cobra', 65000)"
+                        class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
                 </div>
             </div>
         </section>
@@ -162,6 +252,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="javascript/venta.js"> </script>
 </body>
 
 </html>
