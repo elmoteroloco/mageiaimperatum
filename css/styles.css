@@ -611,6 +611,7 @@ body p {
 }
 
 .tiendalista h3 {
+    margin-top: 3.5rem;
     padding: 0.5rem;
     text-align: center;
     color: rgb(202, 255, 255);

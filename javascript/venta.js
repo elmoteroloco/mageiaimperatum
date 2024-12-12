@@ -16,7 +16,7 @@ function agregarProducto(producto, precio) {
 }
 
 function pagar() {
-    // Guardar datos en sessionStorage
+    // Guardar datos en localStorage
     localStorage.setItem('productos', JSON.stringify(productos));
     localStorage.setItem('total', total);
 
@@ -31,7 +31,7 @@ function limpiarCarrito() {
         document.getElementById("carrito").innerHTML = ""; // Elimina todos los productos del carrito
         document.getElementById("btnPagar").textContent = "Comprar";
 
-        // Limpia los datos del sessionStorage
+        // Limpia los datos del localStorage
         localStorage.removeItem('productos');
         localStorage.removeItem('total');
     }
