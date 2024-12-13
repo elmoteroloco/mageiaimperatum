@@ -72,7 +72,7 @@ header {
 }
 
 .fi-rr-shopping-bag {
-    padding-left: 0rem;
+    padding-left: 0;
     font-size: medium;
 }
 
@@ -638,7 +638,7 @@ body p {
 }
 
 .precierre h3 {
-    margin: 0rem;
+    margin: 0;
     padding: 0.5rem;
     text-align: center;
     font-weight: 600;
@@ -1017,6 +1017,14 @@ label {
 
 #detalle {
     color: rgb(202, 255, 255);
+}
+
+#carritodata {
+    display: none;
+}
+
+#totalcarrito {
+    display: none;
 }
 
 /* Footer */

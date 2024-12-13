@@ -41,8 +41,8 @@ function enviarFormulario(event) {
     const totalConPesos = `$${total}`;
 
     // Asigna los datos a los campos ocultos del formulario
-    document.getElementById('carritoData').value = carritoContenido;
-    document.getElementById('totalCarrito').value = totalConPesos;
+    document.getElementById('carritodata').value = carritoContenido;
+    document.getElementById('totalcarrito').value = totalConPesos;
 
     // Envía el formulario a Formspree
     document.getElementById('formulmio').submit();

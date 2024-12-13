@@ -140,7 +140,7 @@ historial de commits que documenten el progreso.
   - Actualización de este Readme.md con los *Puntos clave* correspondientes al *Proyecto Integrador Final*.
   - Actualización de los .HTML con un Navbar responsivo realizado mediante Bootstrap editado y en modalidad *Dark*.
 - 12/12/2024
-- _(**beta.1.0**) con modificaciones mayores según descripción siguiente:
+- _(**beta.1.0**) Con modificaciones mayores según descripción siguiente:
   - Incorporación de mecánica de Tienda Virtual cumpliendo con los requisitos del Proyecto Integrador
   - Edición de los botones de comando en carousel bootstrap en el land-page 'funplay'.
   - Archivos Javascript ('ventas.js' y 'ventasmageia.js').
@@ -153,8 +153,9 @@ historial de commits que documenten el progreso.
   - La función que genera el cierre de la venta muestra elementos dinámicos en el HTML a partir de datos JSON ('ventasmageia.html')
   - Se utilizan mecánicas de manejo del DOM para integrar los datos obtenidos en la interfaz.
 - _(**beta.1.1**) Actualización de este Readme.md con últimas modificaciones e historial de cambios.
-- _(**version final.1.0**)Se agrega una mecánica interactiva para presupuesto al land-page funplay.html con pagina de contacto independiente y se agregan los archivos necesarios para su funcionamiento (presupuesto.js, presupuestosmageia.js y presupuestosmageia.html)
+- _(**version final.1.0**) Se agrega una mecánica interactiva para presupuesto al land-page funplay.html con pagina de contacto independiente y se agregan los archivos necesarios para su funcionamiento (presupuesto.js, presupuestosmageia.js y presupuestosmageia.html)
   - Se actualiza este Readme.md y se revisan errores menores.
+- _(**version final.1.1**) Se realizan correcciones según requerimientos en autograding linter Talento Tech en las paginas de estilo css, ventasmageia.js, crisol.html, funplay.html, presupuestosmageia.html y ventasmageia.html y se actualiza este Readme.md
 
 
 [^al Indice^](#top)
