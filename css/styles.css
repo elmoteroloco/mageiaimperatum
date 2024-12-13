@@ -71,7 +71,8 @@ header {
     padding-right: 1.5rem;
 }
 
-.fi-rr-shopping-bag {
+.fi-rr-shopping-bag,
+.fi-rr-subscription-alt {
     padding-left: 0;
     font-size: medium;
 }

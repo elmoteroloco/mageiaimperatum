@@ -156,6 +156,11 @@ historial de commits que documenten el progreso.
 - _(**version final.1.0**) Se agrega una mecánica interactiva para presupuesto al land-page funplay.html con pagina de contacto independiente y se agregan los archivos necesarios para su funcionamiento (presupuesto.js, presupuestosmageia.js y presupuestosmageia.html)
   - Se actualiza este Readme.md y se revisan errores menores.
 - _(**version final.1.1**) Se realizan correcciones según requerimientos en autograding linter Talento Tech en las paginas de estilo css, ventasmageia.js, crisol.html, funplay.html, presupuestosmageia.html y ventasmageia.html y se actualiza este Readme.md
+- _(**version final.1.2**) Incorporación de 'bootstrap popup' en imágenes de productos de la land-page (crisol.html)
+  - Se agrega pagina 'genericos.js' con el script pertinente a los 'popups'
+  - Se modifica la pagina de estilos 'css' en consecuencia
+  - Modificación de imágenes indicando interactividad con 'popups'
+  - Modificación en botones de enlace a las land-pages.
 
 
 [^al Indice^](#top)
