@@ -2,6 +2,7 @@ let productos = [];
 let total = 0;
 
 function agregarProducto(producto, precio) {
+    alert("agregaste" + producto + " por " + precio + " a tu compra.");
     let carrito = document.getElementById("carrito");
     let productoItem = document.createElement("p");
     productoItem.textContent = producto;
