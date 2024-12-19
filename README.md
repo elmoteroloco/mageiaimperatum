@@ -161,6 +161,10 @@ historial de commits que documenten el progreso.
   - Se modifica la pagina de estilos 'css' en consecuencia
   - Modificación de imágenes indicando interactividad con 'popups'
   - Modificación en botones de enlace a las land-pages.
+- 12/12/2024
+- _(actualizaciones 1,2 y 3 de función de ventas 'agregarProducto')
+  - Se corrige la función de venta para mayor claridad de la operación de acuerdo con la sugerencia del Profesor Matías Campos, agregándose un alert a la misma cuando se agrega un producto al carrito de compras.
+- _(actualización Readme) Actualización de este Readme.md con últimas modificaciones e historial de cambios.
 
 
 [^al Indice^](#top)
